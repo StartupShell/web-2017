@@ -1,6 +1,6 @@
 name,url,class
-ventures,./ventures
-partners,./partners
-events,./events
-FAQ,./faq,menu-text-small
-apply,./apply,button
+ventures,../ventures
+partners,../partners
+events,../events
+FAQ,../faq,menu-text-small
+apply,../apply,button
