@@ -18,7 +18,7 @@ layout: default
   	{% if venture.image %}
     <li class="venture-item">
       {% if venture.website %}<a href="{{ venture.website }}" target="_blank">{% endif %}
-        <img src="../assets/ventures/logo_{{ venture.image }}.svg" alt="{{ venture.name }}">
+        <img src="{{ site.baseurl }}/assets/ventures/logo_{{ venture.image }}.svg" alt="{{ venture.name }}">
         <p>
         {% if venture.status == "Grad" %}<span>Alumnus</span>{% endif %}
         {% if venture.description %}{{ venture.description }}. {% endif %}
