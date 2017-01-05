@@ -57,7 +57,7 @@ ga('send', 'pageview');
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-<script src="{% if pagetitle == 'home' %}.{% else %}..{% endif %}/js/main.js"></script>
+<script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>
 {% if page.url == '/' or page.url == '/index.html' or page.url == '/events' or page.url == '/events/index.html' %}
-<script src="{% if pagetitle == 'home' %}.{% else %}..{% endif %}/js/events.js"></script>
+<script src="{{ '/js/events.js' | prepend: site.baseurl }}"></script>
 {% endif %}
