@@ -21,7 +21,7 @@
       vertical-align: top;
       &:before {
         content: '';
-        background-image:url("{{ site.baseurl}}/assets/shell-logo-wire.svg");
+        background-image:url($baseurl + "/assets/shell-logo-wire.svg");
         background-repeat: no-repeat;
         width:49px;
         height:24px;
