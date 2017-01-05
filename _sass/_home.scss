@@ -1,0 +1,140 @@
+.home {
+    h2 {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    .hero {
+        @include background-image(linear-gradient(rgba(31, 31, 31, 0.5) 0, rgba(31, 31, 31, 0.5) 100%), url("/assets/hero.jpg"));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        min-height: 462px;
+        text-align: left;
+    }
+    .hero-content {
+        @include span-columns(12);
+        color: $white;
+        padding: $space 0;
+        margin: 0 auto;
+        @include media($mobile) {
+            text-align: center;
+        }
+        @include media($tablet) {
+             @include span-columns(8);
+             text-align: left;
+        }
+        @include media($desktop) {
+            @include span-columns(10);
+            padding: $space $space;
+        }
+        h1 {
+            line-height: 62px;
+            margin-bottom: 16px;
+            color: $white;
+            @include media($mobile) {
+                line-height: 41px;
+            }
+        }
+        p {
+            font-weight: bold;
+            @include media($mobile) {
+                font-size: 1.15em;
+            }
+            @include media($desktop) {
+                padding-right: 120px;
+            }
+        }
+        .button-group {
+            margin-top: 36px;
+            &>* {
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .info {
+        @include span-columns(12);
+        font-weight: 600;
+        margin-bottom: $space/2;
+        @include media($desktop) {
+           @include span-columns(6);
+           padding-right: $space/2;
+           margin-bottom: 0;
+        }
+        .info-block {
+            @include span-columns(6);
+            &:nth-of-type(even) {
+                margin-right: 0;
+            }
+        }
+    }
+    .box {
+        @include span-columns(12);
+        @include media($desktop) {
+           @include span-columns(6);
+        }
+    }
+    .slider-sync {
+        @include span-columns(12);
+        margin-top: $space;
+        @include media($desktop) {
+            margin-top: 0;
+           @include span-columns(6);
+        }
+        .slider-quote-select {
+            .slick-slide {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    @include media($tablet) {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+    .stats {
+        margin-bottom: 25px;
+        @include row();
+        @include media($desktop) {
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+        .stat {
+            @include span-columns(4);
+            font-weight: 600;
+            line-height: 46px;
+            color: $gray;
+            span {
+                color: $red;
+                font-size: 36px;
+                @include media($desktop) {
+                   font-size: 45px;
+                }
+                display: block;
+            }
+        }
+    }
+    .events {
+        @include span-columns(12);
+        @include media($desktop) {
+           @include span-columns(6);
+        }
+        .event {
+            @include span-columns(6);
+            .event-title {
+                font-size: 18px;
+            }
+            .event-description {
+                font-size: 14px;
+            }
+        }
+        .box-link {
+            clear: both;
+            text-align: center;
+            a {
+              color: $light-gray;
+            }
+        }
+    }
+}

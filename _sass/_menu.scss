@@ -1,0 +1,137 @@
+.menu {
+  @include media($desktop) {
+    @include align-items(center);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    border-bottom: 1px solid $shade-gray;
+  }
+
+  .menu-logo {
+    padding: 1em 0;
+    @include media($desktop) {
+      padding: 0;
+      @include flex(1);
+    }
+    float: left;
+    font-weight: 600;
+    text-transform: lowercase;
+    a {
+      padding: $space/1.5 $space/4 $space/1.5 0;
+      vertical-align: top;
+      &:before {
+        content: '';
+        background-image:url('/assets/shell-logo-wire.svg');
+        background-repeat: no-repeat;
+        width:49px;
+        height:24px;
+        display: inline-block;
+        background-size: contain;
+        margin-right: 9px;
+      }
+    }
+  }
+
+  .menu-list {
+    position: fixed;
+    z-index: 20;
+    background: $white;
+    @include transition(all 0.3s);
+    top: 0;
+    right: $space*-5;
+    width: $space*5;
+    height: 100%;
+    list-style: none outside none;
+    padding-top: $space;
+    overflow: hidden;
+    @include media($desktop) {
+      position: initial;
+      overflow: inherit;
+      float: right;
+      width: inherit;
+      height: inherit;
+      padding-top: 0;
+    }
+
+    .menu-item {
+      display: block;
+      text-align: center;
+      margin-bottom: $space;
+      @include media($desktop) {
+        display: inline-flex;
+        margin-bottom: 0;
+      }
+
+      .menu-item-link {
+        padding: $space/1.5 $space/4;
+        &.menu-text-small {
+          font-size: 15px;
+          margin-right: $space/3;
+        }
+      }
+
+      &:last-child {
+        .menu-item-link {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .social-list {
+    display: none;
+    text-align: right;
+    @include media($desktop) {
+      @include flex(1);
+      display: inline-block;
+    }
+
+    .social-item {
+      display: inline-block;
+      text-align: right;
+      margin-left: $space/3;
+
+      .icon {
+        width: 1.5em;
+        height: 1.5em;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .slide-button {
+    margin-top: 1em;
+    @include media($desktop) {
+      display: none;
+      margin-top: 0;
+    }
+    @include transition(all 0.3s);
+    position: absolute;
+    width: 2em;
+    right: 2em;
+    float: right;
+    z-index: 30;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 2em;
+      height: 0.15em;
+      background: $red;
+      box-shadow: 0 0.4em 0 0 $red, 0 0.8em 0 0 $red;
+    }
+  }
+
+  &.open {
+
+    .menu-list {
+      right: 0;
+    }
+  }
+}

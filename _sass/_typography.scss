@@ -1,0 +1,94 @@
+
+// FONTS
+
+$titillium: 'Titillium Web';
+$sans: $titillium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+// BODY
+
+body {
+  font-family: $sans;
+  font-weight: 400;
+  color: $light-gray;
+  line-height: 1.25;
+  @include media($mobile) {
+    font-size: 14px;
+  }
+  @include media($tablet) {
+    font-size: 18px;
+  }
+}
+
+
+// HEADINGS
+
+h1,
+.h1 {
+  font-size: $h1-size;
+  font-weight: 700;
+  margin-bottom: $space/4;
+  color: $gray;
+}
+
+h2,
+.h2 {
+  font-size: $h2-size;
+  font-weight: 600;
+  color: $gray;
+}
+
+h3,
+.h3 {
+  font-size: $h3-size;
+  font-weight: 600;
+  color: $gray;
+}
+
+.sm-underline {
+  padding-bottom: 26px;
+  &:after {
+    content: '';
+    position: relative;
+    top: 15px;
+    left: 0;
+    height: 4px;
+    width: 40px;
+    background: $red;
+    display: block;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 $space/4 0;
+}
+
+
+// LINKS
+
+a,
+a:visited {
+  @include transition(all .2s);
+  color: $red;
+  text-decoration: none;
+  &:hover {
+    color: $dark-red;
+  }
+}
+
+input[type="submit"],
+button {
+  @include transition(all .2s);
+}
+
+// PARAGRAPH
+
+p.sub {
+  font-size: 80%;
+  color: $medium-gray;
+}
+p a {
+  font-weight: 600;
+  color: $red;
+}

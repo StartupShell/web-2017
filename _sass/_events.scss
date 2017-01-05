@@ -1,0 +1,62 @@
+.page-events {
+
+}
+
+.event {
+  @include media($mobile) {
+    @include span-columns(4);
+    margin-bottom: $space;
+    text-align: center;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+  @include media($tablet) {
+    @include span-columns(4);
+    @include omega('2n+1');
+    margin-bottom: 1.5*$space;
+    text-align: left;
+  }
+  @include media($desktop) {
+    @include span-columns(4);
+  }
+
+  &:hover .details .image img {
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.3);
+  }
+
+  .details {
+
+    .image {
+      width: 100%;
+      height: auto;
+
+      img {
+        margin: auto;
+
+      }
+
+      &.no-fb {
+        background-color: $light-gray;
+      }
+    }
+
+    .meta {
+
+      .title {
+        
+      }
+
+      p {
+        font-weight: 600;
+        color: $light-gray;
+      }
+    }
+  }
+}
+
+.event .image {
+  @extend .ratio;
+  @extend .fivebythree;
+}

@@ -1,0 +1,16 @@
+<div id="fb-root"></div>
+
+<div class="container">
+<nav class="menu">
+  <div class="menu-logo"><a href="{{ site.baseurl }}/">Startup Shell</a></div>
+
+  <a href="javascript:void(0)" class="slide-button"></a>
+
+  <ul class="menu-list">
+    {% for link in site.data.menu %}
+    <li class="menu-item"><a href="{{ link.url }}" class="menu-item-link {{link.class}}">{{ link.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+</nav> <!-- /.menu -->
+</div>

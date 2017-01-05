@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="page-ventures">
+
+  <section class="full hero">
+    <div class="container">
+      <div class="hero-content hero-plain">
+        <h2>A community of diverse ventures.</h2>
+      </div>
+    </div>
+  </section> <!-- /.hero -->
+
+<section class="venture-grid">
+  <ul>
+  {% for venture in site.data.ventures %}
+  	{% if venture.image %}
+    <li class="venture-item">
+      {% if venture.website %}<a href="{{ venture.website }}" target="_blank">{% endif %}
+        <img src="/assets/ventures/logo_{{ venture.image }}.svg" alt="{{ venture.name }}">
+        <p>
+        {% if venture.status == "Grad" %}<span>Alumnus</span>{% endif %}
+        {% if venture.description %}{{ venture.description }}. {% endif %}
+        </p>
+      {% if venture.website %}</a>{% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</section>
+
+
+</div>

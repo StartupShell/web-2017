@@ -1,0 +1,40 @@
+.page-apply {
+	.subscribe {
+		text-align: center;
+		p {
+			color: $gray;
+		}
+	}
+    .tracks {
+        @include row();
+        .track {
+            @include span-columns(12);
+            @include media($desktop) {
+                @include span-columns(6);
+            }
+            p {
+            	font-weight: 600;
+            }
+        }
+    }
+    .other {
+        @include row();
+        margin-top: 12px;
+        a {
+        	@include span-columns(12);
+            margin-bottom: $space/2;
+            @include media($desktop) {
+                @include span-columns(4);
+                margin-bottom: 0;
+            }
+            .way {
+                background: $red;
+                h3 {
+                    color: $white;
+                    padding: 45px 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

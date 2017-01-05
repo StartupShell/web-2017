@@ -1,0 +1,61 @@
+footer {
+    background: $shade-gray;
+    color: $gray;
+    text-align: center;
+    padding: $space 0 $space/2;
+    @include media($desktop) {
+      text-align: left;
+    }
+    .bottom-menu {
+        @include span-columns(12);
+        @include media($desktop) {
+           @include span-columns(6);
+           @include omega(2n);
+        }
+        ul {
+            display: inline-block;
+            margin-right: 28px;
+            li {
+                margin-bottom: 12px;
+                a {
+                    color: $gray;
+                }
+            }
+        }
+    }
+    .social {
+        @include span-columns(12);
+        margin-top: $space;
+        @include media($desktop) {
+           @include span-columns(6);
+           @include omega(2n);
+           margin-top: 0;
+        }
+        margin-right: 0;
+        .social-list {
+            display: block;
+            margin-top: 36px;
+            .social-item {
+                float: left;
+                margin-right: 30px;
+            }
+        }
+    }
+    form {
+      .input-element {
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      .input-submit {
+        font-weight: normal;
+      }
+    }
+    .copyright {
+      @include span-columns(12);
+      color: darken($shade-gray, 20%);
+      text-align: center;
+      margin-top: 50px;
+    }
+}

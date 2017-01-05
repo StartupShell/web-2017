@@ -1,0 +1,33 @@
+.rounded {
+    border-radius: $radius;
+}
+
+.input-element {
+    border: 1px solid $light-gray;
+    @extend .rounded;
+    padding-left: 16px;
+}
+
+.input-submit {
+	background: $red;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: $white;
+	font-weight: 600;
+	border: none;
+	padding-bottom: 2px;
+}
+
+.input-group {
+    .input-element {
+        &:first-child {
+        	border-right: none;
+        	border-radius: $radius 0 0 $radius;
+        }
+        &:last-child {
+        	border-left: none;
+        	border-radius: 0 $radius $radius 0;
+        	margin-left: -6px;
+        }
+    }
+}

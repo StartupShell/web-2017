@@ -1,0 +1,44 @@
+.venture-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2% $space/2;
+    opacity: .9;
+    &:hover {
+        opacity: 1;
+    }
+    @include media($mobile) {
+        width: 45%;
+    }
+    @include media($tablet) {
+        width: 20%;
+    }
+    @include media($desktop) {
+        width: 20%;
+    }
+    img {
+        max-width: 100%;
+    }
+    p {
+        color: $black;
+        text-align: center;
+        span {
+            font-style: italic;
+            color: $light-gray;
+            margin-right: 2px;
+        }
+    }
+}
+
+.hero {
+    h1 {
+        color: $gray;
+    }
+}
+
+.page-partners {
+    .venture-grid {
+        h3 {
+            margin-bottom: 24px;
+        }
+    }
+}

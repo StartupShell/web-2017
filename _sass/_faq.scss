@@ -1,0 +1,37 @@
+.page-faq {
+    .shortcuts {
+        @include row();
+        .shortcut {
+            @include span-columns(12);
+            @include media($tablet) {
+                @include span-columns(4);
+                @include omega('2n');
+            }
+            margin-bottom: 2em;
+            p {
+                margin-bottom: .2em;
+                text-decoration: underline;
+            }
+        }
+    }
+    .answers {
+        @include row();
+        .answer {
+            @include span-columns(12);
+            @include media($tablet) {
+                @include span-columns(4);
+                @include omega('2n');
+            }
+            margin-bottom: 2em;
+            color: $gray;
+            h3 {
+                margin-bottom: 6px;
+            }
+            .response {
+                strong {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

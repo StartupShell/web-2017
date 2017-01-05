@@ -1,0 +1,7 @@
+# Site settings
+title: Startup Shell
+email: hello@startupshell.org
+description: > # this means to ignore newlines until "baseurl:"
+  Startup Shell is a student-run coworking space and incubator at the University of Maryland. We foster entrepreneurship through collaboration.
+baseurl: ""
+url: "http://startupshell.org"
