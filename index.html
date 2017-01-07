@@ -99,33 +99,19 @@ pagetitle: home
       </div>
       <div class="slider-sync">
         <div class="slider-quote-select">
-          <div class="slider-quote-image"><img src="http://lorempixel.com/60/60/people/1"></div>
-          <div class="slider-quote-image"><img src="http://lorempixel.com/60/60/people/2"></div>
-          <div class="slider-quote-image"><img src="http://lorempixel.com/60/60/people/3"></div>
-          <div class="slider-quote-image"><img src="http://lorempixel.com/60/60/people/4"></div>
-          <div class="slider-quote-image"><img src="http://lorempixel.com/60/60/people/5"></div>
+          {% for testament in site.data.testaments %}
+            <div class="slider-quote-image">
+              <img src="/assets/testaments/portrait_{{ testament.image }}.jpg">
+            </div>
+          {% endfor %}
         </div>
         <div class="slider-quote">
+          {% for testament in site.data.testaments %}
           <div class="quote">
-            <div class="source">1source</div>
-            <div class="quote-text">1text</div>
+            <div class="source">{{ testament.name }}, {{ testament.position }} @ {{ testament.company }}</div>
+            <div class="quote-text">{{ testament.quote }}</div>
           </div>
-          <div class="quote">
-            <div class="source">2source</div>
-            <div class="quote-text">2text</div>
-          </div>
-          <div class="quote">
-            <div class="source">3source</div>
-            <div class="quote-text">3text</div>
-          </div>
-          <div class="quote">
-            <div class="source">4source</div>
-            <div class="quote-text">4text</div>
-          </div>
-          <div class="quote">
-            <div class="source">5source</div>
-            <div class="quote-text">5text</div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>  
