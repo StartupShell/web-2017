@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 17.814px;
+        fill: #c33c41;
+        font-family: "FreightSans Pro";
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #252525;
+        font-family: "Playfair Display";
+        font-size: 16.143px;
+        font-weight: 800;
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <g id="_2._Light.svg" data-name="2. Light.svg">
+    <rect id="BG_copy" data-name="BG copy" class="cls-1" width="1024" height="1024"/>
+    <text id="red_blkLogo.svg" class="cls-2" transform="translate(170.567 544.587) scale(7.186)">301<tspan class="cls-3">ventures</tspan></text>
+  </g>
+</svg>

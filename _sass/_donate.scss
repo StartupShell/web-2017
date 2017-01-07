@@ -1,0 +1,23 @@
+.page-donate {
+    .donate-row {
+    	@include row();
+    	margin-top: $space;
+    	color: $gray;
+    	font-weight: 600;
+        .donate-explain {
+            @include span-columns(12);
+            @include media($desktop) {
+                @include span-columns(6);
+            }
+        }
+        .donate-box {
+            @include span-columns(12);
+            @include media($desktop) {
+                @include span-columns(6);
+            }
+        }
+        .footnote {
+        	font-weight: normal;
+        }
+    }
+}
