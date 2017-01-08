@@ -58,7 +58,7 @@
     .menu-item {
       display: block;
       text-align: center;
-      margin-bottom: $space;
+      margin-bottom: 2em;
       @include media($desktop) {
         display: inline-flex;
         margin-bottom: 0;
@@ -112,7 +112,7 @@
   }
 
   .slide-button {
-    margin-top: 1em;
+    margin-top: 1.3em;
     @include media($desktop) {
       display: none;
       margin-top: 0;
