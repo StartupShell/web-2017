@@ -1,5 +1,7 @@
 .page-events {
-
+  #noEvents {
+    display: none;
+  }
 }
 
 .event {
@@ -22,8 +24,8 @@
     @include span-columns(4);
   }
 
-  &:hover .details .image img {
-    box-shadow: 0 0 12px 0 rgba(0,0,0,0.3);
+  &:hover {
+    @extend .shadow;
   }
 
   .details {
@@ -43,7 +45,8 @@
     }
 
     .meta {
-
+      padding-left: 14px;
+      margin-top: 6px;
       .title {
         
       }

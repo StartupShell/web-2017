@@ -2,10 +2,6 @@
     display: inline-block;
     vertical-align: top;
     margin: 0 2% $space/2;
-    opacity: .9;
-    &:hover {
-        opacity: 1;
-    }
     @include media($mobile) {
         width: 45%;
     }

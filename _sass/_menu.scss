@@ -66,7 +66,7 @@
 
       .menu-item-link {
         padding: $space/1.5 $space/4;
-        font-size: 16px;
+        font-size: 1.14em;
         @include media($desktop) {
           font-size: inherit;
         }

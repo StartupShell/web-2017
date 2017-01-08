@@ -222,7 +222,6 @@ function noEvents(enable) {
 }
 
 var eventsCounter = 0;
-
 $.ajax({
     url: url
 }).done(function(data) {
