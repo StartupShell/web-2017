@@ -38,12 +38,13 @@
     background: $white;
     @include transition(all 0.3s);
     top: 0;
-    right: $space*-5;
-    width: $space*5;
+    right: -15em;
+    width: 12em;
     height: 100%;
     list-style: none outside none;
-    padding-top: $space;
+    padding-top: 2em;
     overflow: hidden;
+    @extend .shadow;
     @include media($desktop) {
       position: initial;
       overflow: inherit;
@@ -51,6 +52,7 @@
       width: inherit;
       height: inherit;
       padding-top: 0;
+      box-shadow: none;
     }
 
     .menu-item {
@@ -64,9 +66,15 @@
 
       .menu-item-link {
         padding: $space/1.5 $space/4;
+        font-size: 16px;
+        @include media($desktop) {
+          font-size: inherit;
+        }
         &.menu-text-small {
-          font-size: 15px;
-          margin-right: $space/3;
+          @include media($desktop) {
+            font-size: 15px;
+            margin-right: $space/3;
+          }
         }
       }
 
@@ -132,6 +140,9 @@
 
     .menu-list {
       right: 0;
+    }
+    .slide-button {
+      right: 13em;
     }
   }
 }

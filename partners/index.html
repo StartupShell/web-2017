@@ -16,13 +16,30 @@ title: Partners
 
 <section class="venture-grid">
 <div class="container">
+<h3 class="sm-underline">Signature Partners</h3>
+  <ul>
+  {% for partner in site.data.partners %}
+    {% if partner.type == 'signature' %}
+    <li class="venture-item">
+      {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
+        <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
+      {% if venture.website %}</a>{% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  </div>
+</section>
+
+<section class="venture-grid">
+<div class="container">
 <h3 class="sm-underline">Campus Partners</h3>
   <ul>
   {% for partner in site.data.partners %}
   	{% if partner.type == 'campus' %}
     <li class="venture-item">
       {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
-        <img src="{{partner.image}}" alt="{{ partner.name }}">
+        <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
       {% if venture.website %}</a>{% endif %}
     </li>
     {% endif %}
@@ -39,7 +56,7 @@ title: Partners
     {% if partner.type == 'resource' %}
     <li class="venture-item">
       {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
-        <img src="{{partner.image}}" alt="{{ partner.name }}">
+        <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
       {% if venture.website %}</a>{% endif %}
     </li>
     {% endif %}
@@ -56,7 +73,7 @@ title: Partners
     {% if partner.type == 'legal' %}
     <li class="venture-item">
       {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
-        <img src="{{partner.image}}" alt="{{ partner.name }}">
+        <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
       {% if venture.website %}</a>{% endif %}
     </li>
     {% endif %}
@@ -73,7 +90,7 @@ title: Partners
     {% if partner.type == 'capital' %}
     <li class="venture-item">
       {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
-        <img src="{{partner.image}}" alt="{{ partner.name }}">
+        <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
       {% if venture.website %}</a>{% endif %}
     </li>
     {% endif %}

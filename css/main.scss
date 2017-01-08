@@ -14,10 +14,11 @@ $baseurl: "{{ site.baseurl }}";
 @import "breakpoints";
 @import "variables";
 @import "typography";
-@import "menu";
 @import "ui";
 @import "footer";
 @import "forms";
+@import "menu";
+
 
 // IMPORTS (PAGES)
 

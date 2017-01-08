@@ -39,8 +39,7 @@ $(document).ready(function() {
 
     };
 
-    $('.venture-grid li.venture-item').shuffle();
-    $('.member-grid li.member-item').shuffle();
+    $('.page-ventures .venture-grid li.venture-item').shuffle();
 
     // COLLAPSE MENU
 

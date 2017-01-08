@@ -32,6 +32,10 @@ hr {
     color: $light-gray;
 }
 
+.shadow {
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.3);
+}
+
 // IMAGE STYLES
 .ratio {
     display: inline-block;

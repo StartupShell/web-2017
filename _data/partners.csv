@@ -1,14 +1,14 @@
 name,type,website,image
 University of Maryland,signature,http://www.umd.edu/,umd
 Amazon Web Services,resource,https://aws.amazon.com/,aws
-BAE Systems,http://www.baesystems.com/,bae
-Creative Market,https://creativemarket.com/,creativemarket
+BAE Systems,signature,http://www.baesystems.com/,bae
+Creative Market,resource,https://creativemarket.com/,creativemarket
 Digital Ocean,resource,https://www.digitalocean.com/,digitalocean
 Dingman Center,campus,http://www.rhsmith.umd.edu/centers-excellence/dingman-center-entrepreneurship,dingman
 Dropbox,resource,https://www.dropbox.com/,dropbox
 Finnegan,legal,http://www.finnegan.com/,finnegan
-MTech,http://www.mtech.umd.edu/,mtech
+MTech,campus,http://www.mtech.umd.edu/,mtech
 A. James Clark School of Engineering,campus,http://www.eng.umd.edu/,eng
 Terrapin Works,campus,https://terrapinworks.umd.edu/,terrapinworks
 Uber,signature,https://www.uber.com/,uber
-301 Ventures,venture capital,http://www.301ventures.com/,301
+301 Ventures,capital,http://www.301ventures.com/,301
