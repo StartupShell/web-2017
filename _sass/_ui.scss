@@ -246,3 +246,25 @@ a.button:visited {
     font-weight: 600;
     line-height: 27px;
 }
+
+// Wells
+
+.wells {
+    @include row();
+    a {
+        @include span-columns(12);
+        margin-bottom: $space/2;
+        @include media($desktop) {
+            @include span-columns(3);
+            margin-bottom: 0;
+        }
+        .well {
+            background: $red;
+            h3 {
+                color: $white;
+                padding: 45px 0;
+                text-align: center;
+            }
+        }
+    }
+}

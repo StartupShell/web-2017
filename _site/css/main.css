@@ -144,7 +144,8 @@ h3, .slider-sync .slider-quote .quote .quote-text, .events .events-container .ev
   color: #101011; }
 
 .sm-underline, .slider-sync .slider-quote .quote .source {
-  padding-bottom: 26px; }
+  padding-bottom: 26px;
+  margin-bottom: 12px; }
   .sm-underline:after, .slider-sync .slider-quote .quote .source:after {
     content: '';
     position: relative;
@@ -532,6 +533,36 @@ a.button:visited {
   font-weight: 600;
   line-height: 27px; }
 
+.wells {
+  display: block; }
+  .wells::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .wells a {
+    float: left;
+    display: block;
+    margin-right: 3.28774%;
+    width: 100%;
+    margin-bottom: 2em; }
+    .wells a:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 64em) {
+      .wells a {
+        float: left;
+        display: block;
+        margin-right: 3.28774%;
+        width: 22.53419%;
+        margin-bottom: 0; }
+        .wells a:last-child {
+          margin-right: 0; } }
+    .wells a .well {
+      background: #D63C33; }
+      .wells a .well h3, .wells a .well .slider-sync .slider-quote .quote .quote-text, .slider-sync .slider-quote .quote .wells a .well .quote-text, .wells a .well .events .events-container .event .event-title, .events .events-container .event .wells a .well .event-title {
+        color: #FFF;
+        padding: 45px 0;
+        text-align: center; }
+
 footer {
   background: #EEEEEE;
   color: #101011;
@@ -899,9 +930,6 @@ a.button:visited, .input-element {
 .hero h1 {
   color: #101011; }
 
-.page-partners .venture-grid h3, .page-partners .venture-grid .slider-sync .slider-quote .quote .quote-text, .slider-sync .slider-quote .quote .page-partners .venture-grid .quote-text, .page-partners .venture-grid .events .events-container .event .event-title, .events .events-container .event .page-partners .venture-grid .event-title {
-  margin-bottom: 24px; }
-
 .page-faq .shortcuts {
   display: block; }
   .page-faq .shortcuts::after {
@@ -986,37 +1014,14 @@ a.button:visited, .input-element {
           margin-right: 0; } }
     .page-apply .tracks .track p {
       font-weight: 600; }
-
-.other {
-  display: block;
-  margin-top: 12px; }
-  .other::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .other a {
+@media screen and (min-width: 64em) {
+  .page-apply .wells a {
     float: left;
     display: block;
     margin-right: 3.28774%;
-    width: 100%;
-    margin-bottom: 2em; }
-    .other a:last-child {
-      margin-right: 0; }
-    @media screen and (min-width: 64em) {
-      .other a {
-        float: left;
-        display: block;
-        margin-right: 3.28774%;
-        width: 31.1415%;
-        margin-bottom: 0; }
-        .other a:last-child {
-          margin-right: 0; } }
-    .other a .way {
-      background: #D63C33; }
-      .other a .way h3, .other a .way .slider-sync .slider-quote .quote .quote-text, .slider-sync .slider-quote .quote .other a .way .quote-text, .other a .way .events .events-container .event .event-title, .events .events-container .event .other a .way .event-title {
-        color: #FFF;
-        padding: 45px 0;
-        text-align: center; }
+    width: 31.1415%; }
+    .page-apply .wells a:last-child {
+      margin-right: 0; } }
 
 .page-donate .donate-row {
   display: block;
@@ -1059,3 +1064,46 @@ a.button:visited, .input-element {
           margin-right: 0; } }
   .page-donate .donate-row .footnote {
     font-weight: normal; }
+
+.page-contact .directors {
+  float: left;
+  display: block;
+  margin-right: 3.28774%;
+  width: 100%; }
+  .page-contact .directors:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 64em) {
+    .page-contact .directors {
+      float: left;
+      display: block;
+      margin-right: 3.28774%;
+      width: 48.35613%; }
+      .page-contact .directors:last-child {
+        margin-right: 0; } }
+  .page-contact .directors .director {
+    margin-bottom: 20px; }
+    .page-contact .directors .director .director-image {
+      display: inline-block; }
+    .page-contact .directors .director .director-meta {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 20px;
+      color: #101011;
+      font-weight: 600; }
+      .page-contact .directors .director .director-meta p {
+        margin-bottom: 6px; }
+.page-contact .location {
+  float: left;
+  display: block;
+  margin-right: 3.28774%;
+  width: 100%; }
+  .page-contact .location:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 64em) {
+    .page-contact .location {
+      float: left;
+      display: block;
+      margin-right: 3.28774%;
+      width: 48.35613%; }
+      .page-contact .location:last-child {
+        margin-right: 0; } }

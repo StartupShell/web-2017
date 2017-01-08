@@ -1,0 +1,30 @@
+.page-contact {
+    .directors {
+        @include span-columns(12);
+        @include media($desktop) {
+            @include span-columns(6);
+        }
+        .director {
+            margin-bottom: 20px;
+            .director-image {
+                display: inline-block;
+            }
+            .director-meta {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 20px;
+                color: $gray;
+                font-weight: 600;
+                p {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+    .location {
+        @include span-columns(12);
+        @include media($desktop) {
+            @include span-columns(6);
+        }
+    }
+}
