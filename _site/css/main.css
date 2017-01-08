@@ -185,6 +185,13 @@ p a {
   font-weight: 600;
   color: #D63C33; }
 
+.icon {
+  background-repeat: no-repeat;
+  display: block; }
+  .icon.icon-email {
+    background-image: url("/assets/icons/email.svg");
+    height: 23px; }
+
 @media screen and (min-width: 64em) {
   .menu {
     -webkit-box-align: center;
@@ -562,6 +569,8 @@ a.button:visited {
         color: #FFF;
         padding: 45px 0;
         text-align: center; }
+      .wells a .well:hover {
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.3); }
 
 footer {
   background: #EEEEEE;
@@ -1081,12 +1090,15 @@ a.button:visited, .input-element {
       .page-contact .directors:last-child {
         margin-right: 0; } }
   .page-contact .directors .director {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px; }
     .page-contact .directors .director .director-image {
-      display: inline-block; }
+      width: 120px;
+      height: 120px; }
+      .page-contact .directors .director .director-image img {
+        max-width: 100%; }
     .page-contact .directors .director .director-meta {
-      display: inline-block;
-      vertical-align: top;
       margin-left: 20px;
       color: #101011;
       font-weight: 600; }
@@ -1107,3 +1119,11 @@ a.button:visited, .input-element {
       width: 48.35613%; }
       .page-contact .location:last-child {
         margin-right: 0; } }
+  .page-contact .location .map iframe {
+    max-width: 100%;
+    height: 320px;
+    margin-bottom: 10px; }
+  .page-contact .location .address p {
+    color: #101011;
+    font-weight: 600;
+    margin-bottom: 3px; }

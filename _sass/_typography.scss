@@ -93,3 +93,14 @@ p a {
   font-weight: 600;
   color: $red;
 }
+
+// ICONS
+
+.icon {
+  background-repeat:no-repeat;
+  display: block;
+  &.icon-email {
+    background-image: url($baseurl + '/assets/icons/email.svg');
+    height: 23px;
+  }
+}
