@@ -31,14 +31,21 @@ footer {
            @include span-columns(6);
            @include omega(2n);
            margin-top: 0;
+           text-align: right;
         }
         margin-right: 0;
         .social-list {
-            display: block;
-            margin-top: 36px;
+            display: inline-block;
+            margin: 36px auto 0 auto;
+            @include media($desktop) {
+              float: right;
+            }
             .social-item {
                 float: left;
                 margin-right: 30px;
+                &:last-child {
+                  margin-right: 0;
+                }
             }
         }
     }

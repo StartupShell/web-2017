@@ -477,7 +477,8 @@ footer {
         display: block;
         margin-right: 3.28774%;
         width: 48.35613%;
-        margin-top: 0; }
+        margin-top: 0;
+        text-align: right; }
         footer .social:last-child {
           margin-right: 0; }
         footer .social:nth-child(2n) {
@@ -485,11 +486,16 @@ footer {
         footer .social:nth-child(2n+1) {
           clear: left; } }
     footer .social .social-list {
-      display: block;
-      margin-top: 36px; }
+      display: inline-block;
+      margin: 36px auto 0 auto; }
+      @media screen and (min-width: 64em) {
+        footer .social .social-list {
+          float: right; } }
       footer .social .social-list .social-item {
         float: left;
         margin-right: 30px; }
+        footer .social .social-list .social-item:last-child {
+          margin-right: 0; }
   footer form .input-element {
     border: none;
     padding: 7px 16px; }
