@@ -491,11 +491,13 @@ footer {
         float: left;
         margin-right: 30px; }
   footer form .input-element {
-    border: none; }
+    border: none;
+    padding: 7px 16px; }
     footer form .input-element:focus {
       outline: none; }
   footer form .input-submit {
-    font-weight: normal; }
+    font-weight: 600;
+    padding: 7px 16px; }
   footer .copyright {
     float: left;
     display: block;
@@ -748,6 +750,11 @@ a.button:visited, .input-element {
         padding-right: 120px; } }
   .home .hero-content .button-group {
     margin-top: 36px; }
+    .home .hero-content .button-group .button {
+      margin-right: 0px; }
+      @media screen and (min-width: 20em) {
+        .home .hero-content .button-group .button {
+          margin-right: 20px; } }
     .home .hero-content .button-group > * {
       margin-bottom: 12px; }
 .home .info {
