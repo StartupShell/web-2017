@@ -155,6 +155,8 @@ h3, .slider-sync .slider-quote .quote .quote-text, .events .events-container .ev
     width: 40px;
     background: #D63C33;
     display: block; }
+  .sm-underline + p, .slider-sync .slider-quote .quote .source + p {
+    margin-top: -12px; }
 
 p {
   line-height: 1.5;

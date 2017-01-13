@@ -58,6 +58,9 @@ h3,
     background: $red;
     display: block;
   }
+  &+p {
+    margin-top: -12px;
+  }
 }
 
 p {
