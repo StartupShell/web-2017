@@ -880,6 +880,8 @@ a.button:visited, .input-element {
       width: 48.35613%; }
       .home .events-container:last-child {
         margin-right: 0; } }
+  .home .events-container #noEvents {
+    text-align: center; }
   .home .events-container .events .event {
     float: left;
     display: block;

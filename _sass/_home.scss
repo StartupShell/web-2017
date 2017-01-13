@@ -132,6 +132,9 @@
         @include media($desktop) {
             @include span-columns(6);
         }
+        #noEvents {
+            text-align: center;
+        }
         .events {
             .event {
                 @include span-columns(6);
