@@ -496,6 +496,8 @@ footer {
         margin-right: 30px; }
         footer .social .social-list .social-item:last-child {
           margin-right: 0; }
+        footer .social .social-list .social-item img {
+          width: 32px; }
   footer form .input-element {
     border: none;
     padding: 7px 16px; }
