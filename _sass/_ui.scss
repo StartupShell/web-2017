@@ -116,13 +116,14 @@ a.button:visited {
 
 // BOX
 .box {
-    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.3);
     padding: $space/3;
     .box-link {
-        text-align: center;
+        text-align: right;
         margin-top: 18px;
         a {
             color: $light-gray;
+            font-weight: 600;
+            text-transform: lowercase;
             text-decoration: none;
             &:hover {
                 color: darken($light-gray, 10%);
@@ -135,12 +136,13 @@ a.button:visited {
     display: inline-block;
     @include row();
     .box-grid-item {
+        text-align: center;
         @include span-columns(4);
         &:nth-of-type(3n) {
             margin-right: 0;
         }
         img {
-            
+            margin: auto;
             height: auto;
             padding: 8px 0;
             @include media($tablet) {

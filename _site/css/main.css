@@ -235,7 +235,7 @@ hr {
   font-size: 14px;
   color: #808080; }
 
-.shadow, .menu .menu-list, .home .events-container, .event:hover {
+.shadow, .menu .menu-list, .home .box-grid .box-grid-item, .home .events-container, .event:hover {
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.05); }
 
 .ratio, .event .image {
@@ -303,13 +303,14 @@ a.button:visited {
     margin-right: 0; }
 
 .box {
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.3);
   padding: 1.33333em; }
   .box .box-link {
-    text-align: center;
+    text-align: right;
     margin-top: 18px; }
     .box .box-link a {
       color: #808080;
+      font-weight: 600;
+      text-transform: lowercase;
       text-decoration: none; }
       .box .box-link a:hover {
         color: #676767; }
@@ -322,6 +323,7 @@ a.button:visited {
     content: "";
     display: table; }
   .box-grid .box-grid-item {
+    text-align: center;
     float: left;
     display: block;
     margin-right: 3.28774%;
@@ -331,6 +333,7 @@ a.button:visited {
     .box-grid .box-grid-item:nth-of-type(3n) {
       margin-right: 0; }
     .box-grid .box-grid-item img {
+      margin: auto;
       height: auto;
       padding: 8px 0; }
       @media screen and (min-width: 45em) {
@@ -830,8 +833,8 @@ a.button:visited, .input-element {
     height: 40px; }
     @media screen and (min-width: 45em) {
       .home .slider-sync .slider-quote-select .slick-slide img {
-        width: 60px;
-        height: 60px; } }
+        width: 70px;
+        height: 70px; } }
 .home .stats {
   margin-bottom: 25px;
   display: block; }
@@ -905,10 +908,15 @@ a.button:visited, .input-element {
         font-size: 14px; }
   .home .events-container .box-link {
     clear: both;
-    text-align: center;
-    padding-top: 3em; }
+    padding-top: 3em;
+    text-align: right; }
     .home .events-container .box-link a {
-      color: #808080; }
+      color: #808080;
+      font-weight: 600;
+      text-transform: lowercase;
+      text-decoration: none; }
+      .home .events-container .box-link a:hover {
+        color: #676767; }
 
 @media screen and (min-width: 20em) {
   .event {

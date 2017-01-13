@@ -79,6 +79,12 @@
             @include span-columns(6);
         }
     }
+    .box-grid {
+        .box-grid-item {
+            @extend .shadow;
+            img {}
+        }
+    }
     .slider-sync {
         @include span-columns(12);
         margin-top: $space;
@@ -92,8 +98,8 @@
                     width: 40px;
                     height: 40px;
                     @include media($tablet) {
-                        width: 60px;
-                        height: 60px;
+                        width: 70px;
+                        height: 70px;
                     }
                 }
             }
@@ -140,7 +146,7 @@
                 @include span-columns(6);
                 min-height: 250px;
                 @include media($tablet) {
-                    box-shadow: 0 3px 12px 0 rgba(0,0,0,0.05);
+                    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.05);
                 }
                 .details {
                     .image {
@@ -163,10 +169,16 @@
         }
         .box-link {
             clear: both;
-            text-align: center;
             padding-top: 3em;
+            text-align: right;
             a {
                 color: $light-gray;
+                font-weight: 600;
+                text-transform: lowercase;
+                text-decoration: none;
+                &:hover {
+                    color: darken($light-gray, 10%);
+                }
             }
         }
     }
