@@ -235,7 +235,7 @@ hr {
   font-size: 14px;
   color: #808080; }
 
-.shadow, .menu .menu-list, .event:hover {
+.shadow, .menu .menu-list, .home .events-container, .event:hover {
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.05); }
 
 .ratio, .event .image {
@@ -860,40 +860,53 @@ a.button:visited, .input-element {
       @media screen and (min-width: 64em) {
         .home .stats .stat span {
           font-size: 45px; } }
-.home .events {
+.home .events-container {
+  padding: 16px;
   float: left;
   display: block;
   margin-right: 3.28774%;
   width: 100%; }
-  .home .events:last-child {
+  .home .events-container:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 45em) {
+    .home .events-container {
+      box-shadow: none;
+      padding: 0px; } }
   @media screen and (min-width: 64em) {
-    .home .events {
+    .home .events-container {
       float: left;
       display: block;
       margin-right: 3.28774%;
       width: 48.35613%; }
-      .home .events:last-child {
+      .home .events-container:last-child {
         margin-right: 0; } }
-  .home .events .event {
+  .home .events-container .events .event {
     float: left;
     display: block;
     margin-right: 3.28774%;
-    width: 48.35613%; }
-    .home .events .event:last-child {
+    width: 48.35613%;
+    min-height: 250px; }
+    .home .events-container .events .event:last-child {
       margin-right: 0; }
-    .home .events .event .event-title {
-      font-size: 18px; }
-    .home .events .event .event-description {
-      font-size: 14px; }
-  .home .events .box-link {
+    @media screen and (min-width: 45em) {
+      .home .events-container .events .event {
+        box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.05); } }
+    .home .events-container .events .event .details .image {
+      max-height: 100px; }
+      .home .events-container .events .event .details .image img {
+        margin: inherit; }
+    .home .events-container .events .event .meta {
+      padding: 3px 13px 13px; }
+      .home .events-container .events .event .meta h3, .home .events-container .events .event .meta .slider-sync .slider-quote .quote .quote-text, .slider-sync .slider-quote .quote .home .events-container .events .event .meta .quote-text, .home .events-container .events .events-container .event .meta .event-title {
+        font-size: 18px; }
+      .home .events-container .events .event .meta p {
+        font-size: 14px; }
+  .home .events-container .box-link {
     clear: both;
-    text-align: center; }
-    .home .events .box-link a {
+    text-align: center;
+    padding-top: 3em; }
+    .home .events-container .box-link a {
       color: #808080; }
-
-.page-events #noEvents {
-  display: none; }
 
 @media screen and (min-width: 20em) {
   .event {
@@ -933,7 +946,7 @@ a.button:visited, .input-element {
   .event .details .image img {
     margin: auto; }
   .event .details .image.no-fb {
-    background-color: #808080; }
+    background-color: #FFF; }
 .event .details .meta {
   padding-left: 14px;
   margin-top: 6px; }

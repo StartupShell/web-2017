@@ -214,17 +214,6 @@ var url = ['https://www.googleapis.com/calendar/v3/calendars',
     curTime
 ].join('');
 
-function noEvents(enable) {
-    if($('#noEvents')) {
-
-        if(enable == false) {
-            $('#noEvents').hide();
-        } else {
-            $('#noEvents').show();
-        }
-    }
-}
-
 var eventsCounter = 0;
 $.ajax({
     url: url
@@ -257,7 +246,6 @@ $.ajax({
     .filter(function(i) {
         if ($('.events').hasClass('limit-3') && eventsCounter < 3) {
             eventsCounter++;
-            noEvents(false);
             return true;
         } else if (!$('.events').hasClass('limit-3')) {
             return true;
@@ -269,6 +257,10 @@ $.ajax({
     .forEach(function(i, index) {
         // Make a blank element
         $('.events').append('<div class="event" itemscope itemtype="https://schema.org/Event"></div>');
+
+        if($('#noEvents')) {
+            $('#noEvents').hide();
+        }
 
         assembleStructure(i, index, function(assembled, position) {
             // And add it to the blank element in [position] position.

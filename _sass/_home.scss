@@ -20,8 +20,8 @@
             text-align: center;
         }
         @include media($tablet) {
-             @include span-columns(8);
-             text-align: left;
+            @include span-columns(8);
+            text-align: left;
         }
         @include media($desktop) {
             @include span-columns(10);
@@ -62,9 +62,9 @@
         font-weight: 600;
         margin-bottom: $space/2;
         @include media($desktop) {
-           @include span-columns(6);
-           padding-right: $space/2;
-           margin-bottom: 0;
+            @include span-columns(6);
+            padding-right: $space/2;
+            margin-bottom: 0;
         }
         .info-block {
             @include span-columns(6);
@@ -76,7 +76,7 @@
     .box {
         @include span-columns(12);
         @include media($desktop) {
-           @include span-columns(6);
+            @include span-columns(6);
         }
     }
     .slider-sync {
@@ -84,7 +84,7 @@
         margin-top: $space;
         @include media($desktop) {
             margin-top: 0;
-           @include span-columns(6);
+            @include span-columns(6);
         }
         .slider-quote-select {
             .slick-slide {
@@ -115,31 +115,55 @@
                 color: $red;
                 font-size: 36px;
                 @include media($desktop) {
-                   font-size: 45px;
+                    font-size: 45px;
                 }
                 display: block;
             }
         }
     }
-    .events {
+    .events-container {
+        @extend .shadow;
+        padding: 16px;
         @include span-columns(12);
-        @include media($desktop) {
-           @include span-columns(6);
+        @include media($tablet) {
+            box-shadow: none;
+            padding: 0px;
         }
-        .event {
+        @include media($desktop) {
             @include span-columns(6);
-            .event-title {
-                font-size: 18px;
-            }
-            .event-description {
-                font-size: 14px;
+        }
+        .events {
+            .event {
+                @include span-columns(6);
+                min-height: 250px;
+                @include media($tablet) {
+                    box-shadow: 0 3px 12px 0 rgba(0,0,0,0.05);
+                }
+                .details {
+                    .image {
+                        max-height: 100px;
+                        img {
+                            margin: inherit;
+                        }
+                    }
+                }
+                .meta {
+                    padding: 3px 13px 13px;
+                    h3 {
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
             }
         }
         .box-link {
             clear: both;
             text-align: center;
+            padding-top: 3em;
             a {
-              color: $light-gray;
+                color: $light-gray;
             }
         }
     }

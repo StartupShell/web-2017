@@ -1,9 +1,3 @@
-.page-events {
-  #noEvents {
-    display: none;
-  }
-}
-
 .event {
   @include media($mobile) {
     @include span-columns(4);
@@ -40,7 +34,7 @@
       }
 
       &.no-fb {
-        background-color: $light-gray;
+        background-color: $white;
       }
     }
 
