@@ -21,9 +21,9 @@ title: Partners
   {% for partner in site.data.partners %}
     {% if partner.type == 'signature' %}
     <li class="venture-item">
-      {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
+      {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
-      {% if venture.website %}</a>{% endif %}
+      {% if partner.website %}</a>{% endif %}
     </li>
     {% endif %}
   {% endfor %}
@@ -38,9 +38,9 @@ title: Partners
   {% for partner in site.data.partners %}
   	{% if partner.type == 'campus' %}
     <li class="venture-item">
-      {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
+      {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
-      {% if venture.website %}</a>{% endif %}
+      {% if partner.website %}</a>{% endif %}
     </li>
     {% endif %}
   {% endfor %}
@@ -55,9 +55,9 @@ title: Partners
   {% for partner in site.data.partners %}
     {% if partner.type == 'resource' %}
     <li class="venture-item">
-      {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
+      {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
-      {% if venture.website %}</a>{% endif %}
+      {% if partner.website %}</a>{% endif %}
     </li>
     {% endif %}
   {% endfor %}
@@ -72,9 +72,9 @@ title: Partners
   {% for partner in site.data.partners %}
     {% if partner.type == 'legal' %}
     <li class="venture-item">
-      {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
+      {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
-      {% if venture.website %}</a>{% endif %}
+      {% if partner.website %}</a>{% endif %}
     </li>
     {% endif %}
   {% endfor %}
@@ -89,9 +89,9 @@ title: Partners
   {% for partner in site.data.partners %}
     {% if partner.type == 'capital' %}
     <li class="venture-item">
-      {% if venture.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
+      {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}">
-      {% if venture.website %}</a>{% endif %}
+      {% if partner.website %}</a>{% endif %}
     </li>
     {% endif %}
   {% endfor %}
