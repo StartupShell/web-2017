@@ -144,6 +144,7 @@ function assembleStructure(data, index, callback) {
     } else {
         newData.start = timeFormat(new Date(data.start.dateTime));
     }
+    newData.realStart = new Date(data.start.dateTime);
     newData.end = new Date(data.end.dateTime);
     newData.description = data.description;
     newData.title = data.summary;
@@ -158,7 +159,7 @@ function assembleStructure(data, index, callback) {
         if (!fbData.cover) {
             var cover = '<div class="image no-fb"><img src="../assets/shell-logo-wire.svg"></div>';
         } else {
-            var cover = '<div class="image"><img src="' + fbData.cover + '"></div>';
+            var cover = '<div class="image"><img src="' + fbData.cover + '" itemprop="image"></div>';
         }
 
         // Display gCal description for featured event
@@ -178,10 +179,13 @@ function assembleStructure(data, index, callback) {
         }
 
         // Return this structure
-        var ret = ['<a target="_blank" href="', fbData.link, '"><div class="details">',
+        var ret = ['<a target="_blank" href="', fbData.link, '" itemprop="url"><div class="details">',
             cover,
             '<div class="meta">',
-            '<h3 class="title">', fbData.title, '</h3>',
+            '<h3 class="title" itemprop="name">', fbData.title, '</h3>',
+            '<meta itemprop="startDate" content="', newData.realStart, '">',
+            '<meta itemprop="endDate" content="', newData.end, '">',
+            '<meta itemprop="location" content="', fbData.location, '">',
             '<p class="date">', newData.start, location, '</p>',
             '</div>',
             '</div></a>'
@@ -264,7 +268,7 @@ $.ajax({
     // The assemble the structure
     .forEach(function(i, index) {
         // Make a blank element
-        $('.events').append('<div class="event"></div>');
+        $('.events').append('<div class="event" itemscope itemtype="https://schema.org/Event"></div>');
 
         assembleStructure(i, index, function(assembled, position) {
             // And add it to the blank element in [position] position.
