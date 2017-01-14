@@ -27,7 +27,7 @@
                 {% for link in site.data.links %}
                 <li class="social-item">
                     <a href="{{ link.url }}" target="_blank">
-                        <img class="icon" src="/assets/icons/{{ link.name }}.svg">
+                        <img class="icon" src="{{ site.baseurl }}/assets/icons/{{ link.name }}.svg">
                     </a>
                 </li>
                 {% endfor %}
