@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
     // Slick Slider
@@ -50,29 +51,10 @@ $(document).ready(function() {
     // MAILCHIMP
     // -- Adapted from http://stackoverflow.com/questions/8425701/ajax-mailchimp-signup-form-integration
 
-
-    // spam-free email links (a#email)
-    var email = document.getElementById('email');
-    if (email) {
-        email.setAttribute('href', email.getAttribute('href').replace('nospam-at-', 'hello@'));
-        email.innerHTML = email.innerHTML.replace('nospam-at-', 'hello@');
-
-        // Validate email
-        function isEmail(email) {
-            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(email);
-        }
-    }
-
     if ($('.subscribe form').length > 0) {
         $('form input[type="submit"]').bind('click', function(event) {
             if (event) event.preventDefault();
-
-            if (!isEmail($(".subscribe form [name='email']").val())) {
-                alert('Email address is not valid.');
-            } else {
-                register($('.subscribe form'));
-            }
+            register($(this).parent());
         });
     }
 
@@ -98,7 +80,7 @@ $(document).ready(function() {
             success: function(data) {
                 if (data.result != "success") {
                     console.log(data);
-                    alert("Submittion error. Please try again.");
+                    alert(data.msg);
                 } else {
                     $('.subscribe form input[type=submit]').prop('value', 'Success!');
                     $('.subscribe form input[type=submit]').css('background', 'green');
@@ -106,5 +88,22 @@ $(document).ready(function() {
             }
         });
     }
+
+    // Smooth Scroll
+
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
 
 });

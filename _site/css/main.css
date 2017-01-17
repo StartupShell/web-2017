@@ -461,7 +461,8 @@ footer {
           clear: left; } }
     footer .bottom-menu ul {
       display: inline-block;
-      margin-right: 28px; }
+      margin-right: 28px;
+      vertical-align: top; }
       footer .bottom-menu ul li {
         margin-bottom: 12px; }
         footer .bottom-menu ul li a {
@@ -1057,9 +1058,9 @@ a.button:visited, .input-element {
     .page-faq .answers .answer .response strong {
       color: #D63C33; }
 
-.page-apply .subscribe {
+.page-apply .notify {
   text-align: center; }
-  .page-apply .subscribe p {
+  .page-apply .notify p {
     color: #101011; }
 .page-apply .tracks {
   display: block; }
