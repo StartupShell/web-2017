@@ -942,8 +942,10 @@ a.button:visited, .input-element {
     text-align: left; }
     .event:last-child {
       margin-right: 0; }
+    .event:nth-child(2n) {
+      margin-right: 0; }
     .event:nth-child(2n+1) {
-      margin-right: 0; } }
+      clear: left; } }
 @media screen and (min-width: 64em) {
   .event {
     float: left;
@@ -951,7 +953,11 @@ a.button:visited, .input-element {
     margin-right: 3.28774%;
     width: 31.1415%; }
     .event:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+    .event:nth-child(2n) {
+      margin-right: 3.28774%; }
+    .event:nth-child(2n+1) {
+      clear: none; } }
 .event .details .image {
   width: 100%;
   height: auto; }
@@ -960,8 +966,10 @@ a.button:visited, .input-element {
   .event .details .image.no-fb {
     background-color: #FFF; }
 .event .details .meta {
-  padding-left: 14px;
   margin-top: 6px; }
+  @media screen and (min-width: 45em) {
+    .event .details .meta {
+      padding-left: 14px; } }
   .event .details .meta p {
     font-weight: 600;
     color: #808080; }

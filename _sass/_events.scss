@@ -10,12 +10,13 @@
   }
   @include media($tablet) {
     @include span-columns(4);
-    @include omega('2n+1');
+    @include omega(2n);
     margin-bottom: 1.5*$space;
     text-align: left;
   }
   @include media($desktop) {
     @include span-columns(4);
+    @include omega-reset(2n);
   }
 
   &:hover {
@@ -39,7 +40,9 @@
     }
 
     .meta {
-      padding-left: 14px;
+      @include media($tablet) {
+        padding-left: 14px;
+      }
       margin-top: 6px;
       .title {
         
