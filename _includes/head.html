@@ -17,14 +17,14 @@
     <meta name="twitter:creator" content="@startupshell">
     <meta name="twitter:image:src" content="{{ "/assets/cover.jpg" | prepend: site.url }}">
     <meta name="twitter:domain" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    
+
     <!-- Open Graph data (Facebook) -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{site.title}}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:image" content="{{ "/assets/cover.jpg" | prepend: site.url }}" />
     <meta property="og:description" content="{{ site.description }}" />
-    
+
     <!-- Icons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/icons/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/icons/favicons/favicon-32x32.png" sizes="32x32">
@@ -35,9 +35,10 @@
 	<meta name="msapplication-config" content="{{ site.baseurl }}/assets/icons/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
-	
+
     <link rel="stylesheet" href="{{ "/css/main.css?v=2.2" | prepend: site.baseurl }}">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:600,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
