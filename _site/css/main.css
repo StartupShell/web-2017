@@ -337,7 +337,8 @@ a.button:visited {
     .box-grid .box-grid-item img {
       margin: auto;
       height: auto;
-      padding: 8px 0; }
+      padding: 8px 0;
+      max-width: 100%; }
       @media screen and (min-width: 45em) {
         .box-grid .box-grid-item img {
           width: 80%; } }
