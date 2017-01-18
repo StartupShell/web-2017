@@ -31,30 +31,22 @@ TL;DR if chocolatey is installed:
 > jekyll serve
 ```
 
-Install Chocolatey (skip if already installed)
+1. Install Chocolatey (skip if already installed)
+⋅⋅* Open a command prompt with admin privs
+⋅⋅* `> @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
+⋅⋅* Close command prompt
 
-Open a command prompt with admin privs
+2. Install Ruby
+⋅⋅* `> choco install ruby -y`
 
-`> @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
+3. Install Bundler
+⋅⋅* `> gem install bundler`
 
-Close command prompt
+4. Install Jekyll
+⋅⋅* `> gem install jekyll`
 
-Install Ruby
+5. Download Repo
+⋅⋅* `> git clone https://github.com/StartupShell/web-2017.git`
 
-`> choco install ruby -y`
-
-Install Bundler
-
-`> gem install bundler`
-
-Install Jekyll
-
-`> gem install jekyll`
-
-Download repo
-
-`> git clone https://github.com/StartupShell/web-2017.git`
-
-Run locally
-
-`> jekyll serve`
+6. Run Locally
+⋅⋅* `> jekyll serve`
