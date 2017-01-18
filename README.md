@@ -22,7 +22,14 @@ Run locally
 
 #### Windows Dev Environment
 
-Install Chocolatey
+TL;DR if chocolatey is installed:
+`> choco install ruby -y`
+`> gem install bundler`
+`> gem install jekyll`
+`> git clone https://github.com/startupshell/web-2017.git && cd web-2017`
+`> jekyll serve`
+
+Install Chocolatey (skip if already installed)
 
 Open a command prompt with admin privs
 
