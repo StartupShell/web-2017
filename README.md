@@ -44,7 +44,7 @@ Install Jekyll
 
 Download repo
 
-`> [sudo] git clone https://github.com/StartupShell/web-2017.git`
+`> git clone https://github.com/StartupShell/web-2017.git`
 
 Run locally
 
