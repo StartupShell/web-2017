@@ -19,11 +19,11 @@ Master branch is deployed to production almost automagically. Add [deploy: produ
 
 TL;DR if chocolatey is installed:
 ```
-> choco install ruby -y
-> gem install bundler
-> gem install jekyll
-> git clone https://github.com/startupshell/web-2017.git && cd web-2017
-> jekyll serve
+choco install ruby -y
+gem install bundler
+gem install jekyll
+git clone https://github.com/startupshell/web-2017.git && cd web-2017
+jekyll serve
 ```
 
 1. Install Chocolatey (skip if already installed)
