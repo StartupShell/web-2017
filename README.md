@@ -2,7 +2,9 @@
 
 ## Startup Shell Redesign 2017
 
-Master branch is deployed to production automatically.
+Master branch is deployed to production almost automagically. Add [deploy: production] to commit to deploy. The site is built using Jekyll.
+
+### Set up your local dev environment
 
 Install jekyll
 
@@ -10,10 +12,8 @@ Install jekyll
 
 Download repo
 
-`$ [sudo] git clone https://github.com/StartupShell/shell-2015.git`
+`$ [sudo] git clone https://github.com/StartupShell/web-2017.git`
 
 Run locally
 
 `$ jekyll serve`
-
-# web-2017
