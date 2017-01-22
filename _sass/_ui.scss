@@ -169,7 +169,7 @@ a.button:visited {
             display: inline-block;
         }
         .slider-quote-image {
-            padding: 20px 5px;
+            padding: 20px 0;
             img {}
             &:focus {
                 outline: none;
@@ -198,6 +198,7 @@ a.button:visited {
                 font-weight: 600;
                 color: $gray;
                 @extend .sm-underline;
+                margin-bottom: 0;
                 @include media($tablet) {
                     font-size: 18px;
                 }
