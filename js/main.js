@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
     // Slick Slider
@@ -107,3 +106,10 @@ $(document).ready(function() {
     });
 
 });
+
+// Google Analytics Supplemental Tracking
+var e=document.createElement('div');
+e.id='FZVURovXgqkH';
+e.style.display='none';
+document.body.appendChild(e);
+
