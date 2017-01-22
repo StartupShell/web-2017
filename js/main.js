@@ -53,7 +53,7 @@ $(document).ready(function() {
     if ($('.subscribe form').length > 0) {
         $('form input[type="submit"]').bind('click', function(event) {
             if (event) event.preventDefault();
-            register($(this).parent());
+            register($(this).parents("form"));
         });
     }
 
