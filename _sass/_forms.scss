@@ -20,6 +20,10 @@
 
 .input-group {
     .input-element {
+        padding: 6px 16px;
+        &:focus {
+          outline: none;
+        }
         &:first-child {
         	border-right: none;
         	border-radius: $radius 0 0 $radius;
@@ -29,5 +33,9 @@
         	border-radius: 0 $radius $radius 0;
         	margin-left: -6px;
         }
+    }
+    .input-submit {
+        font-weight: 600;
+        padding: 7px 16px;
     }
 }

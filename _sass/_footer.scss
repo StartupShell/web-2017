@@ -54,16 +54,12 @@ footer {
         }
     }
     form {
-      .input-element {
-        border: none;
-        padding: 7px 16px;
-        &:focus {
-          outline: none;
+      .input-group {
+        .input-element {
+          border: none;
+          padding-top: 7px;
+          padding-bottom: 7px;
         }
-      }
-      .input-submit {
-        font-weight: 600;
-        padding: 7px 16px;
       }
     }
     .copyright {

@@ -9,8 +9,13 @@
         @include row();
         .track {
             @include span-columns(12);
+            margin-bottom: $space;
+            &:last-child {
+                margin-bottom: 0;
+            }
             @include media($desktop) {
                 @include span-columns(6);
+                margin-bottom: 0;
             }
             p {
                 font-weight: 600;
