@@ -46,9 +46,16 @@
         }
         .button-group {
             margin-top: 36px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            @include media($tablet) {
+                flex-direction: row;
+            }
             .button {
                 margin-right: 0px;
-                @include media($mobile) {
+                margin-left: 0;
+                @include media($tablet) {
                     margin-right: 20px;
                 }
             }

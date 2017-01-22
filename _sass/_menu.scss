@@ -9,7 +9,7 @@
 
   .menu-logo {
     padding: 1em 0;
-    margin-top: 0;
+    margin-top: 4px;
     @include media($desktop) {
       margin-top: 7px;
       padding: 0;
@@ -30,6 +30,10 @@
         display: inline-block;
         background-size: contain;
         margin-right: 9px;
+        margin-top: -3px;
+          @include media($desktop) {
+            margin-top: 0;
+          }
       }
     }
   }
@@ -114,23 +118,21 @@
   }
 
   .slide-button {
-    margin-top: 1.3em;
     @include media($desktop) {
       display: none;
-      margin-top: 0;
     }
     @include transition(all 0.3s);
     position: absolute;
     width: 2em;
-    right: 2em;
+    right: 1em;
     float: right;
     z-index: 30;
-
+    padding: 30px;
     &:before {
       content: "";
       position: absolute;
-      left: 0;
-      top: 2px;
+      left: 17px;
+      top: 21px;
       width: 2em;
       height: 0.15em;
       background: $red;
