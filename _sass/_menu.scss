@@ -71,9 +71,10 @@
       }
 
       .menu-item-link {
-        padding: $space/1.5 $space/4;
+        
         font-size: 1.14em;
         @include media($desktop) {
+          padding: $space/1.5 $space/4;
           font-size: inherit;
         }
         &.menu-text-small {
