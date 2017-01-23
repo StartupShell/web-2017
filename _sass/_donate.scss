@@ -20,4 +20,11 @@
         	font-weight: normal;
         }
     }
+    .wells {
+        a {
+            @include media($desktop) {
+                @include span-columns(4);
+            }
+        }
+    }
 }
