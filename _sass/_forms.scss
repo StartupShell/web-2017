@@ -24,11 +24,11 @@
         &:focus {
           outline: none;
         }
-        &:first-child {
+        &[type='email'] {
         	border-right: none;
         	border-radius: $radius 0 0 $radius;
         }
-        &:last-child {
+        &[type='submit'] {
         	border-left: none;
         	border-radius: 0 $radius $radius 0;
         	margin-left: -6px;

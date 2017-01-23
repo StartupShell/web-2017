@@ -84,8 +84,8 @@ $(document).ready(function() {
                     console.log(data);
                     alert(data.msg);
                 } else {
-                    $('.subscribe form input[type=submit]').prop('value', 'Success!');
-                    $('.subscribe form input[type=submit]').css('background', 'green');
+                    $form.find('input[type=submit]').prop('value', 'Success!');
+                    $form.find('input[type=submit]').css('background', 'green');
                 }
             }
         });
