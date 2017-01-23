@@ -50,17 +50,20 @@ $(document).ready(function() {
     // MAILCHIMP
     // -- Adapted from http://stackoverflow.com/questions/8425701/ajax-mailchimp-signup-form-integration
 
-    if ($('.subscribe form').length > 0) {
-        $('form input[type="submit"]').bind('click', function(event) {
-            if (event) event.preventDefault();
-            register($(this).parents("form"));
-        });
-    }
+    $('form input[type="submit"]').bind('click', function(event) {
+
+        if (event) event.preventDefault();
+
+        var form = $(this).parents("form");
+        register(form);
+    });
 
     function register($form) {
         // Prepare for Mailchimp
         var email = $form.find('input[type=email]');
         email.attr('name', 'EMAIL');
+
+        var url = $form.find('input[name=list]').val();
 
         var data = {};
         var dataArray = $form.serializeArray();
@@ -69,7 +72,7 @@ $(document).ready(function() {
         });
 
         $.ajax({
-            url: '//startupshell.us8.list-manage.com/subscribe/post-json?u=ab309f640b0f94f8e5fd0a2e8&amp&id=af8824bb76&c=?',
+            url: url,
             data: data,
             dataType: 'jsonp',
             error: function(err) {
