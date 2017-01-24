@@ -36,6 +36,11 @@ hr {
     box-shadow: 0 3px 12px 0 rgba(0,0,0,0.05);
 }
 
+*:hover {
+    transition: color .2s, box-shadow .2s;
+
+}
+
 // IMAGE STYLES
 .ratio {
     display: inline-block;
