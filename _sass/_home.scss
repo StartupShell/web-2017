@@ -152,6 +152,7 @@
             .event {
                 @include span-columns(6);
                 min-height: 250px;
+                margin-bottom: 0;
                 @include media($tablet) {
                     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.05);
                 }
@@ -176,7 +177,7 @@
         }
         .box-link {
             clear: both;
-            padding-top: 3em;
+            padding-top: 2em;
             text-align: right;
             a {
                 color: $light-gray;
