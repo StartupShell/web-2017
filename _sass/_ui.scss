@@ -37,8 +37,7 @@ hr {
 }
 
 *:hover {
-    transition: color .2s, box-shadow .2s;
-
+    @include transition(all 0.3s);
 }
 
 // IMAGE STYLES
