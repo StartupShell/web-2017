@@ -3,6 +3,7 @@
 }
 
 .event {
+  @include transition(all 0.3s);
   @include media($mobile) {
     @include span-columns(4);
     margin-bottom: $space;
