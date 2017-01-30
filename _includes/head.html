@@ -12,14 +12,14 @@
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@startupshell">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{site.title}}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:title" content="{% if page.title %}{% if page.title != 'Home' %}{{ page.title }} - {% endif %}{{site.title}}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{{ site.description }}">
     <meta name="twitter:creator" content="@startupshell">
     <meta name="twitter:image:src" content="{{ "/assets/cover.jpg" | prepend: site.url }}">
     <meta name="twitter:domain" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Open Graph data (Facebook) -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{site.title}}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:title" content="{% if page.title %}{% if page.title != 'Home' %}{{ page.title }} - {% endif %}{{site.title}}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:image" content="{{ "/assets/cover.jpg" | prepend: site.url }}" />
