@@ -20,7 +20,7 @@
   }
 
   &:hover {
-    @extend .shadow;
+    @include shadow();
   }
 
   .details {

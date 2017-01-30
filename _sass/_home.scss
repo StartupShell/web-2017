@@ -88,7 +88,7 @@
     }
     .box-grid {
         .box-grid-item {
-            @extend .shadow;
+            @include shadow($clickable: true);
             img {}
         }
     }
@@ -135,11 +135,11 @@
         }
     }
     .events-container {
-        @extend .shadow;
+        @include shadow();
         padding: 16px;
         @include span-columns(12);
         @include media($tablet) {
-            box-shadow: none;
+             @include shadow($clickable: false, $show: false);
             padding: 0px;
         }
         @include media($desktop) {
@@ -154,7 +154,7 @@
                 min-height: 250px;
                 margin-bottom: 0;
                 @include media($tablet) {
-                    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.05);
+                    @include shadow($clickable: true);
                 }
                 .details {
                     .image {

@@ -35,7 +35,7 @@
 .page-partners {
     .venture-item {
         &:hover {
-            @extend .shadow;
+            @include shadow();
         }
     }
 }

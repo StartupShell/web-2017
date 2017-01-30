@@ -32,10 +32,6 @@ hr {
     color: $light-gray;
 }
 
-.shadow {
-    box-shadow: 0 3px 12px 0 rgba(0,0,0,0.05);
-}
-
 *:hover {
     @include transition(all 0.3s);
 }
@@ -96,6 +92,7 @@ a.button:visited {
     text-transform: uppercase;
     color: $white;
     font-weight: 800!important;
+    @include shadow($clickable: true);
     &:hover {
         background: $dark-red;
         cursor: pointer;
