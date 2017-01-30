@@ -58,7 +58,7 @@
       width: inherit;
       height: inherit;
       padding-top: 0;
-      box-shadow: none;
+      @include shadow($show: false);
     }
 
     .menu-item {

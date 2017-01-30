@@ -139,7 +139,7 @@
         padding: 16px;
         @include span-columns(12);
         @include media($tablet) {
-             @include shadow($clickable: false, $show: false);
+             @include shadow($show: false);
             padding: 0px;
         }
         @include media($desktop) {
