@@ -1,3 +1,5 @@
+var returnIndex = 0;
+
 // FACEBOOK
 function fbEnsureInit(callback) {
     if (!window.fbApiInit) {
@@ -159,7 +161,7 @@ function assembleStructure(data, index, callback) {
         if (!fbData.cover) {
             var cover = '<div class="image no-fb"><img src="../assets/shell-logo-wire.svg"></div>';
         } else {
-            var cover = '<div class="image"><img src="' + fbData.cover + '" itemprop="image"></div>';
+            var cover = '<div class="image"><img src="' + fbData.cover + '" itemprop="image" alt="' + fbData.title + '" onload="eventLoaded(this)" class="event-loading"></div>';
         }
 
         // Display gCal description for featured event
@@ -190,6 +192,9 @@ function assembleStructure(data, index, callback) {
             '</div>',
             '</div></a>'
         ].join('');
+
+        // Iterates counter on how many event datas we got so far
+        returnIndex++;
 
         callback(ret, fbData.position);
     })
@@ -252,20 +257,30 @@ $.ajax({
         }
     })
 
+    .filter(function(i) {
+        if(!i) {
+            $('#noEvents').show();
+        }
+        return true;
+    })
 
     // The assemble the structure
     .forEach(function(i, index) {
         // Make a blank element
-        $('.events').append('<div class="event" itemscope itemtype="https://schema.org/Event"></div>');
-
-        if($('#noEvents')) {
-            $('#noEvents').hide();
-        }
+        $('.events').append('<div class="event event-loading" itemscope itemtype="https://schema.org/Event"></div>');
 
         assembleStructure(i, index, function(assembled, position) {
             // And add it to the blank element in [position] position.
             // This solves the async issue of our requests coming back at different times
             $('.events .event').eq(position).html(assembled);
+            $('.events .event').eq(position).removeClass("event-loading");
+            $('.events .event').eq(position).addClass("event-loaded");
+
+            // If this is the last callback
+            console.log(returnIndex + ' ' + data.items.length);
+            if(returnIndex == data.items.length) {
+                $('.event-spinner').hide();
+            }
 
         });
 

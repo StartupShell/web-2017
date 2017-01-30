@@ -216,9 +216,7 @@ a.button:visited {
     }
 }
 
-.slick-slide {
-
-}
+.slick-slide {}
 
 // Events 
 .events {
@@ -243,6 +241,22 @@ a.button:visited {
     }
 }
 
+// EVENT LOADER 
+.event-spinner {
+    position: absolute;
+    font-size: 2em;
+}
+
+.event-loading {
+    opacity: 0;
+}
+
+.event-loaded {
+    opacity: 1;
+    transition: opacity 500ms;
+    transform: translate3d(0, 0, 0);
+}
+
 // Hero
 .hero-plain {
     text-align: center;
@@ -258,7 +272,6 @@ a.button:visited {
 }
 
 // Wells
-
 .wells {
     @include row();
     a {
@@ -276,7 +289,7 @@ a.button:visited {
                 text-align: center;
             }
             &:hover {
-                box-shadow: 0 0 12px 0 rgba(0,0,0,0.3);
+                box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.3);
             }
         }
     }

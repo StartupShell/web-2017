@@ -1,3 +1,7 @@
+#noEvents {
+  display: none;
+}
+
 .event {
   @include media($mobile) {
     @include span-columns(4);
@@ -11,7 +15,7 @@
   @include media($tablet) {
     @include span-columns(4);
     @include omega(2n);
-    margin-bottom: 1.5*$space;
+    margin-bottom: 2em;
     text-align: left;
   }
   @include media($desktop) {
