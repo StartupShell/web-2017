@@ -1,7 +1,10 @@
 .home {
     h2 {
         text-align: center;
-        margin-bottom: 64px;
+        margin-bottom: 32px;
+        @include media($tablet) {
+            margin-bottom: 64px;
+        }
     }
     .hero {
         @include background-image(linear-gradient(rgba(31, 31, 31, 0.5) 0, rgba(31, 31, 31, 0.5) 100%), url($baseurl + '/assets/hero.jpg'));
@@ -84,6 +87,7 @@
         @include span-columns(12);
         @include media($desktop) {
             @include span-columns(6);
+            padding: $space/3;
         }
     }
     .box-grid {
@@ -166,15 +170,20 @@
         }
         .events {
             .event {
-                @include span-columns(6);
+                @include span-columns(12);
                 min-height: 250px;
                 margin-bottom: 0;
+                @include shadow($show: false);
                 @include media($tablet) {
-                    @include shadow($clickable: true);
+                    @include span-columns(4);
+                    @include shadow($show: true, $clickable: true);
                 }
                 .details {
                     .image {
-                        max-height: 100px;
+                        max-height: 200px;
+                        @include media($tablet) {
+                            max-height: 100px;
+                        }
                         img {
                             margin: inherit;
                         }

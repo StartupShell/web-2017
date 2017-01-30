@@ -14,7 +14,10 @@ section,
 .section,
 hr,
 .hr {
-    margin-bottom: $space;
+    margin-bottom: $space*0.75;
+    @include media($tablet) {
+        margin-bottom: $space;
+    }
 }
 
 hr {
@@ -117,7 +120,6 @@ a.button:visited {
 
 // BOX
 .box {
-    padding: $space/3;
     .box-link {
         text-align: right;
         margin-top: 18px;
