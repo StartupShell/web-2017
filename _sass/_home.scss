@@ -105,9 +105,24 @@
                     width: 60px;
                     height: 60px;
                     cursor: pointer;
+                    z-index: 10;
+                    position: relative;
                     @include media($tablet) {
                         width: 70px;
                         height: 70px;
+                    }
+                }
+                &:not(.slick-current) {
+                    img {
+                        &:hover {
+                            z-index: 15;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                &.slick-current {
+                    img {
+                        z-index: 20;
                     }
                 }
             }
@@ -140,7 +155,7 @@
         padding: 16px;
         @include span-columns(12);
         @include media($tablet) {
-             @include shadow($show: false);
+            @include shadow($show: false);
             padding: 0px;
         }
         @include media($desktop) {
