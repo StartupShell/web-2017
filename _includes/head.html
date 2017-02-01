@@ -5,6 +5,7 @@
     <title>{% if page.title %}{% if page.title != 'Home' %}{{ page.title }} - {% endif %}{{site.title}}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="{{ site.description }}" />
+    <meta name="robots" content="nofollow" />
     <meta itemprop="name" content="{{ site.title }}">
     <meta itemprop="description" content="{{ site.description }}">
     <meta itemprop="image" content="{{ "/assets/cover.jpg" | prepend: site.url }}">
