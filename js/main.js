@@ -116,3 +116,14 @@ e.id='FZVURovXgqkH';
 e.style.display='none';
 document.body.appendChild(e);
 
+// Check for 404
+
+// Get URL
+var url = window.location.href;
+// Get DIV
+var msg = document.getElementById('404error');
+// Check if URL contains the keyword
+if( url.search( 'error=404' ) > 0 ) {
+// Display the message
+msg.style.display = "block";
+}
