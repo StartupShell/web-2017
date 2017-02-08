@@ -127,7 +127,3 @@ if( url.search( 'error=404' ) > 0 ) {
 // Display the message
 msg.style.display = 'block';
 }
-// Otherwise hide
-else {
-  msg.style.display = 'none';
-}
