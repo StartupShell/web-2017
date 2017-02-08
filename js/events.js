@@ -257,13 +257,6 @@ $.ajax({
         }
     })
 
-    .filter(function(i) {
-        if(!i) {
-            $('#noEvents').show();
-        }
-        return true;
-    })
-
     // The assemble the structure
     .forEach(function(i, index) {
         // Make a blank element
@@ -277,7 +270,6 @@ $.ajax({
             $('.events .event').eq(position).addClass("event-loaded");
 
             // If this is the last callback
-            console.log(returnIndex + ' ' + data.items.length);
             if(returnIndex == data.items.length) {
                 $('.event-spinner').hide();
             }
@@ -285,5 +277,11 @@ $.ajax({
         });
 
     });
+
+    // Check for no events after all the filtering
+    if (data.items.length == 0) {
+        $('#noEvents').show();
+        $('.event-spinner').hide();
+    }
 
 });
