@@ -6,4 +6,4 @@ Master branch is deployed to production almost automagically. Add [deploy: produ
 
 ### Contributing
 
-See [contributing](contributing.md)
+See [contributing](CONTRIBUTING.md)
