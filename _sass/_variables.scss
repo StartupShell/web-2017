@@ -8,7 +8,7 @@ $medium-gray:	#888;
 $light-gray:	#808080;
 $shade-gray:	#EEEEEE;
 
-$red: 			#D63C33;
+$red: 			#D74034;
 $dark-red:		darken($red, 10%);
 
 // DIMENSIONS
@@ -45,7 +45,7 @@ $h3-size: 	1.33em;
 				transform: translateY(-1px);
 	    		box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 			}
-		} 
+		}
 	}
 	@else {
 		box-shadow: none;
