@@ -125,5 +125,9 @@ var msg = document.getElementById('404error');
 // Check if URL contains the keyword
 if( url.search( 'error=404' ) > 0 ) {
 // Display the message
-msg.style.display = "block";
+msg.style.display = 'block';
+}
+// Otherwise hide
+else {
+  msg.style.display = 'none';
 }
