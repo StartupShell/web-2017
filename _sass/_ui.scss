@@ -86,6 +86,7 @@ hr {
 .button,
 a.button,
 a.button:visited {
+    -webkit-appearance: none;
     display: inline-block;
     background: $red;
     padding: $space/5 $space/2!important;
