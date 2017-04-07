@@ -34,3 +34,7 @@ jekyll serve
   * `git clone https://github.com/StartupShell/web-2017.git`
 6. Run Locally
   * `jekyll serve`
+
+#### If you get an SSL error when attempting to install bundler or any other gem
+
+See http://guides.rubygems.org/ssl-certificate-update/ to fix this problem.
