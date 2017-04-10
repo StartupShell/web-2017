@@ -50,7 +50,7 @@ $(document).ready(function() {
     // MAILCHIMP
     // -- Adapted from http://stackoverflow.com/questions/8425701/ajax-mailchimp-signup-form-integration
 
-    $('form input[type="submit"]').bind('click', function(event) {
+    $('.email-subscribe').bind('click', function(event) {
 
         if (event) event.preventDefault();
 
@@ -127,3 +127,22 @@ if( url.search( 'error=404' ) > 0 ) {
 // Display the message
 msg.style.display = 'block';
 }
+
+// Check for Partner Thanks
+
+// Get URL
+var url = window.location.href;
+// Get DIV
+var msg = document.getElementById('partnerthanks');
+// Check if URL contains the keyword
+if( url.search( 'inquiry=thanks' ) > 0 ) {
+// Display the message
+msg.style.display = 'block';
+}
+
+// jQuery Slide
+$( "#partner-form-link" ).click(function() {
+  $( "#partner-form" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});

@@ -44,3 +44,20 @@
         padding: 7px 16px;
     }
 }
+
+.partner-submit {
+    border-radius: $radius $radius $radius $radius;
+    background: $red;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $white;
+    font-weight: 600;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    -webkit-appearance: none;
+    &:hover {
+        background: $dark-red;
+        cursor: pointer;
+    }
+}

@@ -3,13 +3,42 @@ layout: default
 title: Partners
 ---
 
+<div id="partnerthanks" style="display: none; padding: 40px; background-color: #d74034; text-align: center; color: white; font-weight: bold;">Thanks for inquiring about partnering with Startup Shell, we'll be in touch soon!</div>
+
 <div class="page-partners">
 
   <section class="full hero">
     <div class="container">
       <div class="hero-content hero-plain">
         <h2>Partners</h2>
-        <div class="hero-subheader">Startup Shell is made possible through the resources, support, and guidance provided by our partners.<br /><center><div style="width: 40px;padding-top: 10px;margin-top: 10px; border-top: 1px solid #cccccc;"></div></center>Want to get involved? <a href="mailto:partners@startupshell.org?subject=Startup Shell Partnership Inquiry">Partner with us</a></div>
+        <div class="hero-subheader">Startup Shell is made possible through the resources, support, and guidance provided by our partners.<br /><center><div style="width: 40px;padding-top: 10px;margin-top: 10px; border-top: 1px solid #cccccc;"></div></center><p>Want to get involved?<a id="partner-form-link" href="#/"> Partner with us</a></p>
+          <div class="input-group" id="partner-form" style="display:none;">
+            <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+            <input type=hidden name='captcha_settings' value='{"keyname":"startupshellorg","fallback":"true","orgId":"00D46000000aBxE","ts":""}'>
+            <input type=hidden name="oid" value="00D46000000aBxE">
+            <input type=hidden name="retURL" value="https://startupshell.org/partners/?inquiry=thanks">
+
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+            <!--  <input type="hidden" name="debug" value=1>                              -->
+            <!--  <input type="hidden" name="debugEmail"                                  -->
+            <!--  value="nicholas@startupshell.org">                                      -->
+
+            <p><label for="first_name">First Name</label><br><input class="input-element" id="first_name" maxlength="40" name="first_name" size="20" type="text" /></p>
+
+            <p><label for="last_name">Last Name</label><br><input class="input-element" id="last_name" maxlength="80" name="last_name" size="20" type="text" /></p>
+
+            <p><label for="email">Email</label><br><input class="input-element" id="email" maxlength="80" name="email" size="20" type="text" /></p>
+
+            <p><label for="company">Company</label><br><input class="input-element" id="company" maxlength="40" name="company" size="20" type="text" /></p>
+
+            <center><div class="g-recaptcha" data-sitekey="6Ld2XxwUAAAAALWoOj4Z4XzAjhm1HvB4T92kQL1p"></div><br></center>
+            <input class="partner-submit" type="submit" name="submit">
+
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </section> <!-- /.hero -->

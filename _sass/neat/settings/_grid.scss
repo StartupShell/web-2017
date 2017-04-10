@@ -1,24 +1,16 @@
 @charset "UTF-8";
 
-/// Sets the relative width of a single grid column. The unit used should be the same one used to define `$gutter`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with a `!global` flag.
+/// Sets the relative width of a single grid column. The unit used should be the same one used to define `$gutter`. Set with a `!global` flag.
 ///
 /// @type Number (Unit)
 
-$column: golden-ratio(1em, 3) !default;
+$column: 4.2358em !default;
 
-/// Sets the relative width of a single grid gutter. The unit used should be the same one used to define `$column`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with the `!global` flag.
+/// Sets the relative width of a single grid gutter. The unit used should be the same one used to define `$column`. Set with the `!global` flag.
 ///
 /// @type Number (Unit)
 
-$gutter: golden-ratio(1em, 2) !default; // adjusted from stock neat for wider margin's
-
-// ------------------------------------------------------------
-// Set Bourbon's flex-grid variables to match what Neat is doing
-// http://bourbon.io/docs/#flex-grid
-// ------------------------------------------------------------
-
-$fg-column: $column;
-$fg-gutter: $gutter;
+$gutter: 1.618em !default;
 
 /// Sets the total number of columns in the grid. Its value can be overridden inside a media query using the `media()` mixin. Set with the `!global` flag.
 ///
@@ -26,11 +18,11 @@ $fg-gutter: $gutter;
 
 $grid-columns: 12 !default;
 
-/// Sets the max-width property of the element that includes `outer-container()`. To learn more about `em()` see [Bourbon docs](http://bourbon.io/docs/#px-to-em). Set with the `!global` flag.
+/// Sets the max-width property of the element that includes `outer-container()`. Set with the `!global` flag.
 ///
 /// @type Number (Unit)
 ///
-$max-width: 960px !default;
+$max-width: 1200px !default;
 
 /// When set to true, it sets the box-sizing property of all elements to `border-box`. Set with a `!global` flag.
 ///
@@ -38,13 +30,9 @@ $max-width: 960px !default;
 ///
 /// @example css - CSS Output
 ///   html {
-///     -webkit-box-sizing: border-box;
-///     -moz-box-sizing: border-box;
 ///     box-sizing: border-box; }
 ///
-///   *, *:before, *:after {
-///     -webkit-box-sizing: inherit;
-///     -moz-box-sizing: inherit;
+///   *, *::after, *::before {
 ///     box-sizing: inherit;
 ///   }
 
@@ -61,13 +49,3 @@ $default-feature: min-width; // Default @media feature for the breakpoint() mixi
 ///@type String
 
 $default-layout-direction: LTR !default;
-
-// ------------------------------------------------------------
-// Omega Reset
-// ------------------------------------------------------------
-
-@mixin omega-reset($nth) {
-  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
-  &:nth-child(#{$nth}+1) { clear: none }
-}
-

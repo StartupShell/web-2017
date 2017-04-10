@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 @if $border-box-sizing == true {
-  html {
+  html { // http://bit.ly/1qk2tVR
     box-sizing: border-box;
   }
 
   * {
     &,
-    &:before,
-    &:after {
+    &::after,
+    &::before {
       box-sizing: inherit;
     }
   }
