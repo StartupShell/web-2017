@@ -17,6 +17,9 @@ title: Press
 <section class="press-items">
 <div class="container">
 <h3 class="sm-underline">Press Releases</h3>
+  {% if site.categories.releases == null %}
+  <h4>There don't seem to be any press releases, check back later.</h4>
+  {% else %}
   <ul>
   {% for post in site.posts %}
     <li>
@@ -24,6 +27,7 @@ title: Press
     </li>
   {% endfor %}
   </ul>
+  {% endif %}
 </div>
 </section>
 
