@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Brendan Iribe, Oculus CEO, gives $50,000 to Startup Shell for Advancement of Entrepreneurship at the University of Maryland"
-date:   2017-04-12 9:00:00 -0500
+date:   2017-04-13 9:00:00 -0500
 categories: press releases
 ---
 
