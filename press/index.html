@@ -1,0 +1,41 @@
+---
+layout: default
+title: Press
+---
+
+<div class="page-press">
+
+  <section class="full hero">
+    <div class="container">
+      <div class="hero-content hero-plain">
+        <h2>Press</h2>
+        <div class="hero-subheader">Stay up to date on all things Startup Shell.</div>
+      </div>
+    </div>
+  </section> <!-- /.hero -->
+
+<section class="press-items">
+<div class="container">
+<h3 class="sm-underline">Press Releases</h3>
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      {{ post.date | date: '%B %d, %Y' }} - <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+</section>
+
+<section class="press-items">
+<div class="container">
+<h3 class="sm-underline">Press Assets</h3>
+<h4>The Startup Shell Brand</h4>
+  <p>Brand Assets - <a href="https://github.com/StartupShell/brand/archive/master.zip">Download</a>
+  <br />Brand Guidelines - <a href="https://www.notion.so/The-Startup-Shell-Brand-d7c0454fd3904941bff67f19870bdf86">View</a></p>
+<h4>Marketing Materials</h4>
+  <p>Pitch Deck - <a href="https://docs.google.com/presentation/d/1oRdUo4Smb_1d_L84fHNIpvTmBNqvf2yabbm04MfG1fk/edit?usp=sharing">View</a></p>
+</div>
+</section>
+
+</div>
