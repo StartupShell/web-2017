@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Startup Shell joins the Stripe Atlas Network"
+title:  "Startup Shell Proud to Join the Stripe Atlas Network"
 date:   2017-04-06 9:00:00 -0500
 categories: press releases
 presscontactname: "Nicholas Bentley"
@@ -9,7 +9,7 @@ presscontactphone: "(206) 673-2979 x8"
 subtitle: "Partnership set to provide an invaluable service to early-stage startups."
 ---
 
-__COLLEGE PARK, Md.__ - Startup Shell is proud to announce it's induction into the Stripe Atlas Network of incubators and accelerators. Stripe Atlas is a new initiative launched by Stripe designed to eliminate barriers to startup creation surrounding the initial legal formation of business ventures. Stripe Atlas takes the hassle out of creating a business venture by filing the paperwork to create a Delaware C-Corporation, obtain an EIN from the IRS, and opening a bank account.
+__COLLEGE PARK, Md.__ - Startup Shell is proud to announce its induction into the Stripe Atlas Network of incubators and accelerators. Stripe Atlas is a new initiative launched by Stripe designed to eliminate barriers to startup creation surrounding the initial legal formation of business ventures. Stripe Atlas takes the hassle out of creating a business venture by filing the paperwork to create a Delaware C-Corporation, obtain an EIN from the IRS, and opening a bank account.
 
 According to Stripe, "Starting a company can be needlessly complicated—lengthy paperwork, bank visits, legal complexity, numerous fees, and non-obvious decisions about what services to use. We built Atlas to make this easy: a tool to handle everything involved in establishing an internet business. It’s available to entrepreneurs everywhere." Startup Shell looks forward to a prosperous partnership with Stripe in this initiative.
 

@@ -21,10 +21,12 @@ title: Press
   <p>No press releases found, check back later.</p>
   {% else %}
   <ul>
-  {% for post in site.posts %}
+  {% for post in site.categories.releases %}
+  {% if post.url %}
     <li>
       {{ post.date | date: '%B %d, %Y' }} - <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
+  {% endif %}
   {% endfor %}
   </ul>
   {% endif %}
