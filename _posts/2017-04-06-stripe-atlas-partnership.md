@@ -13,6 +13,6 @@ __COLLEGE PARK, Md.__ - Startup Shell is proud to announce it's induction into t
 
 According to Stripe, "Starting a company can be needlessly complicated—lengthy paperwork, bank visits, legal complexity, numerous fees, and non-obvious decisions about what services to use. We built Atlas to make this easy: a tool to handle everything involved in establishing an internet business. It’s available to entrepreneurs everywhere." Startup Shell looks forward to a prosperous partnership with Stripe in this initiative.
 
-Parties interested in using Stripe Atlas to form their business should contact Startup Shell via email at [mailto:hello@startupshell.org](mailto:hello@startupshell.org).
+Parties interested in using Stripe Atlas to form their business should contact Startup Shell via email at [hello@startupshell.org](mailto:hello@startupshell.org).
 
 __About Startup Shell__ - Startup Shell is a student-run non-profit incubator based in College Park, Md. on the University of Maryland campus. Founded in 2012, Startup Shell has seen approximately 60 startups develop in its space and growth to a community of over 200 undergraduate and graduate students and alumni. See [https://startupshell.org/ventures](https://startupshell.org/ventures) for a list of Startup Shell's portfolio companies. See [https://startupshell.org/press](https://startupshell.org/press) for brand assets, guidelines, and marketing materials.
