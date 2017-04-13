@@ -27,7 +27,7 @@ title: Ventures
         {% if venture.description %}{{ venture.description }}. {% endif %}
         </p>
         <p class="venture-item-social">
-        {% if venture.twitter %}<a href="https://twitter.com/{{ venture.twitter }}"><i class="fa fa-twitter-square fa-lg"></i></a>{% endif %} {% if venture.facebook %}<a href="{{ venture.facebook }}"><i class="fa fa-facebook-square fa-lg"></i></a>{% endif %}
+        {% if venture.twitter %}<a href="https://twitter.com/{{ venture.twitter }}"><i class="fa fa-twitter-square fa-lg"></i></a>{% endif %} {% if venture.facebook %}<a href="{{ venture.facebook }}"><i class="fa fa-facebook-square fa-lg"></i></a>{% endif %} {% if venture.website %}<a href="{{ venture.website }}"><i class="fa fa-external-link-square fa-lg"></i></a>{% endif %}
         </p>
       {% if venture.website %}</a>{% endif %}
     </li>
