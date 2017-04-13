@@ -20,8 +20,13 @@
         text-align: center;
         span {
             font-style: italic;
-            color: $light-gray;
+            font-size: 0.7em;
             margin-right: 2px;
+            color: #696969;
+            padding-left: 4px;
+            padding-right: 4px;
+            border-radius: 3px;
+            border: 1px solid #696969;
         }
     }
     &:hover {
@@ -41,11 +46,6 @@
         transition: visibility 0s, opacity 0.2s linear;
         color: $black;
         text-align: center;
-        span {
-            font-style: italic;
-            color: $light-gray;
-            margin-right: 2px;
-        }
     }
     .venture-item-social {
         visibility: hidden;
