@@ -18,16 +18,16 @@ title: Ventures
   {% for venture in site.data.ventures %}
   	{% if venture.image %}
     <li class="venture-item">
+    <div class="venture-item-name"><strong>{% if venture.venture %}{{ venture.venture }}{% endif %}</strong></div>
       {% if venture.website %}<a href="{{ venture.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/ventures/logo_{{ venture.image }}.svg" alt="{{ venture.name }}">
-        <p class="venture-item-name"><strong>{% if venture.venture %}{{ venture.venture }}{% endif %}</strong></p>
         <p>
         {% if venture.status == "Grad" %}<span>Alumnus</span>{% endif %}
         {% if venture.status == "Exit" %}<span>Exited</span>{% endif %}
         {% if venture.description %}{{ venture.description }}. {% endif %}
         </p>
-        <p class="venture-item-name">
-        {% if venture.twitter %}<a href="https://twitter.com/{{ venture.twitter }}"><i class="fa fa-twitter"></i></a>{% endif %} {% if venture.facebook %}<a href="{{ venture.facebook }}"><i class="fa fa-facebook"></i></a>{% endif %}
+        <p class="venture-item-social">
+        {% if venture.twitter %}<a href="https://twitter.com/{{ venture.twitter }}"><i class="fa fa-twitter-square fa-lg"></i></a>{% endif %} {% if venture.facebook %}<a href="{{ venture.facebook }}"><i class="fa fa-facebook-square fa-lg"></i></a>{% endif %}
         </p>
       {% if venture.website %}</a>{% endif %}
     </li>
