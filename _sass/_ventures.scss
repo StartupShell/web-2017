@@ -24,6 +24,25 @@
             margin-right: 2px;
         }
     }
+    &:hover {
+        @include venture-shadow();
+        .venture-item-name {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    .venture-item-name {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        color: $black;
+        text-align: center;
+        span {
+            font-style: italic;
+            color: $light-gray;
+            margin-right: 2px;
+        }
+    }
 }
 
 .hero {
