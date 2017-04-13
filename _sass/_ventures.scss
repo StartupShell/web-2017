@@ -24,6 +24,42 @@
             margin-right: 2px;
         }
     }
+    &:hover {
+        @include venture-shadow();
+        .venture-item-name {
+            visibility: visible;
+            opacity: 1;
+        }
+        .venture-item-social {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    .venture-item-name {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.2s linear;
+        color: $black;
+        text-align: center;
+        span {
+            font-style: italic;
+            color: $light-gray;
+            margin-right: 2px;
+        }
+    }
+    .venture-item-social {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.2s linear;
+        a {
+            color: $black;
+            transition: .1s;
+            padding-left: 5px;
+        }
+        a:hover {
+            color: $red;
+        }
+    }
 }
 
 .hero {
