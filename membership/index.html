@@ -11,6 +11,8 @@ pagedocs: true
 ---
 {% if page.pagedocs == "true" %}
 <!-- ABOUT THIS PAGE
+The pagedocs variable on this page tells Jekyll not to render the HTML comments below on our actual website.
+
 Howdy! The content on this [membership] page can be changed via the variables set below. Changing "appstatus" to open will alter the content on the page to hide the email sign up form, display an apply now button, and add apply links below each section about founders & fellows. Likewise, for new application websites & tools, just modify the url to reflect the location of the new application. The "nextbatch" and "monthopen" variables modify the placeholder text for when applications are closed. It reads like this Applications for {{ page.nextbatch }} batch open in {{ page.monthopen }}.
 -->
 {% else %}
