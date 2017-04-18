@@ -8,6 +8,8 @@ pagedocs: true
 The partners page is pretty cool. Update partners the same way you would update ventures. If you don't know how to do that, head on over to the index.html page in the ventures folder and read those instructions.
 
 The "Partner with us" link on this page rolls down a form that one can fill out to inquire about partnering with Startup Shell. This form submits to Startup Shell's Salesforce instance and generates a Lead.
+
+The partners page was originally designed to support partner logos in the .png file format. It has since been updated to support partner logos in the .svg file format. Since we don't have svg files for all of the partners (but most of them we do), there is a fallback to the png files when the svg file for a partner is not present. Make sure you have one of either before you publish changes, and try to emphasize the svg file format, the goal is to eventually phase out all png files.
 -->
 {% else %}
 {% endif %}
