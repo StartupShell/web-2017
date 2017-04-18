@@ -1,8 +1,44 @@
 ---
 layout: default
 title: Ventures
+pagedocs: true
 ---
+{% if page.pagedocs == "true" %}
+<!-- ABOUT THIS PAGE
+The pagedocs variable on this page tells Jekyll not to render the HTML comments below on our actual website.
 
+Howdy! You're probably here looking to update the ventures on this page. It's super easy to get it done, but unfortunately it's not done here ;). You'll need a couple of things before you can update the ventures page, they are:
+
+[Required]
+1. The venture logo (this is a must), the venture will not display without a logo.
+2. A short description (this is also a must).
+[Optional]
+3. The status of the venture - this can be either "Active" "Grad" or "Exit" which render as nothing, Alumnus, and Exited respectively on the ventures page.
+4. Venture website - this will make the logo clickable & add the external link icon.
+5. Twitter handle, facebook url - this will add the respective icons. NOTE: The twitter handle must be @handle and NOT the url. The facebook url MUST be a url (e.g. @venture, https://facebook.com/venture).
+6. Brag - this is a short little brag about the venture. We don't currently use this in the design on the website, so it won't display.
+7. Team Members - we don't currently use these in the theme either, but it would be wise to include them.
+
+## UPDATING VENTURES
+#### Notes about the venture logo
+The venture logo MUST be in the svg file format and named in the following convention: logo_venture.svg
+The venture logo will not display correctly if the SVG is not in the correct proportions, to make sure of this open the svg in illustrator or another vector program & change the artboard size to 200px x 150px. Then resize the logo to fit in this space & re-save the logo.
+#### Updating the ventures
+Here's where we get to the section about them not being on this page.
+Venture information is stored in a csv file called ventures.csv located in the _data subdirectory just under the site root.
+Data is separated into the following categories: venture,image,status,team,website,description,brag,twitter,facebook.
+When adding a new venture, just add a line to the bottom of this file and follow the conventions above.
+For example, for a venture called Starbucks, with a logo file of logo_starbucks.svg we might use the following:
+Starbucks,starbucks,Active,"John Doe, Jane Doe",https://starbucks.com,"A great coffee company",,@starbucks,https://facebook.com/starbucks
+##### Note several things in that string above.
+If there is more than one team member, enclose the entire string in quotes ""
+Always enclose the description in quotes ""
+If you don't have an optional variable, simply skip it and add a comma to indicate you are moving to the next variable.
+VERY IMPORTANT NOTE - There MUST be the requisite number of commas in each line within the ventures.csv file. If a comma is missing or there are too many, the website will fail to build.
+To change ventures, just modify the variables for that venture & save.
+-->
+{% else %}
+{% endif %}
 <div class="page-ventures">
 
   <section class="full hero">
