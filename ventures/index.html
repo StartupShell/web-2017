@@ -60,6 +60,7 @@ To change ventures, just modify the variables for that venture & save.
         <p>
         {% if venture.status == "Grad" %}<span>Alumnus</span>{% endif %}
         {% if venture.status == "Exit" %}<span>Exited</span>{% endif %}
+        {% if venture.status == "Dead" %}<span>Inactive</span>{% endif %}
         {% if venture.description %}{{ venture.description }}. {% endif %}
         </p>
         <p class="venture-item-social">
