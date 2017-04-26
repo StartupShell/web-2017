@@ -58,10 +58,10 @@ To change ventures, just modify the variables for that venture & save.
       {% if venture.website %}<a href="{{ venture.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/ventures/logo_{{ venture.image }}.svg" alt="{{ venture.name }}">
         <p>
+        {% if venture.description %}{{ venture.description }}. {% endif %}
         {% if venture.status == "Grad" %}<span>Alumnus</span>{% endif %}
         {% if venture.status == "Exit" %}<span>Exited</span>{% endif %}
         {% if venture.status == "Dead" %}<span>Inactive</span>{% endif %}
-        {% if venture.description %}{{ venture.description }}. {% endif %}
         </p>
         <p class="venture-item-social">
         {% if venture.twitter %}<a href="https://twitter.com/{{ venture.twitter }}"><i class="fa fa-twitter-square fa-lg"></i></a>{% endif %} {% if venture.facebook %}<a href="{{ venture.facebook }}"><i class="fa fa-facebook-square fa-lg"></i></a>{% endif %} {% if venture.website %}<a href="{{ venture.website }}"><i class="fa fa-external-link-square fa-lg"></i></a>{% endif %}
