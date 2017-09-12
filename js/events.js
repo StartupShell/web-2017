@@ -219,7 +219,7 @@ var url = ['https://www.googleapis.com/calendar/v3/calendars',
     curTime
 ].join('');
 
-var eventsCounter = 4;
+var eventsCounter = 0;
 $.ajax({
     url: url
 }).done(function(data) {
