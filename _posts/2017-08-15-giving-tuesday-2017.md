@@ -6,10 +6,10 @@ categories: press releases
 presscontactname: "Nicholas Bentley"
 presscontactemail: "nicholas@startupshell.org"
 presscontactphone: "(206) 673-2979 x8"
-subtitle: "#GivingTuesday is a national movement to encourage charitable giving after the busiest shopping day of the year."
+subtitle: "#GivingTuesday is a national movement to encourage charitable giving after the busiest shopping weekend of the year."
 ---
 
-__COLLEGE PARK, Md.__ - Startup Shell announced today its participation in the #GivingTuesday campaign for the first time. Giving Tuesday is a national movement to encourage charitable giving after the busiest shopping day of the year, Black Friday. Non profits across the nation and the world will participate in #GivingTuesday 2017.
+__COLLEGE PARK, Md.__ - Startup Shell announced today its participation in the #GivingTuesday movement for the first time. Giving Tuesday is a national movement to encourage charitable giving after the busiest shopping weekend of the year, Black Friday & Cyber Monday. Non profits across the nation and the world will participate in #GivingTuesday 2017. Read more about the #GivingTuesday movement here: [https://www.givingtuesday.org/](https://www.givingtuesday.org/).
 
 __Matching Program__ - Any contribution to Startup Shell on #GivingTuesday will be matched by Brendan Iribe up to a total of $10,000. Visit [https://startupshell.org/donate/iribe-matching-program](https://startupshell.org/donate/iribe-matching-program) to support Startup Shell's mission by making a _tax-deductible_ donation.
 
