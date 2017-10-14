@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Startup Shell to participate in #GivingTuesday for the first time"
-date:   2017-08-15 9:00:00 -0500
+date:   2017-10-15 9:00:00 -0500
 categories: press releases
 presscontactname: "Nicholas Bentley"
 presscontactemail: "nicholas@startupshell.org"
