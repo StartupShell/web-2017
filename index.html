@@ -2,6 +2,7 @@
 layout: default
 title: Home
 appstatus: closed
+donatestatus: on
 pagedocs: true
 ---
 {% if page.pagedocs == "true" %}
@@ -43,6 +44,10 @@ Some notes about this page:
         <div class="button-group">
           {% if page.appstatus == "open" %}
           <a href="{{ site.baseurl }}/membership" class="button">Apply for Membership</a>
+          {% else %}
+          {% endif %}
+          {% if page.donatestatus == "on" %}
+          <a href="{{ site.baseurl }}/donate/iribe-matching-program" class="button">Donate Now</a>
           {% else %}
           {% endif %}
           <a href="#learn-more" class="button button-white">Learn More</a>
