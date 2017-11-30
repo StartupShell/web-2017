@@ -39,7 +39,9 @@ $(document).ready(function() {
 
     };
 
-    $('.page-ventures .venture-grid li.venture-item').shuffle();
+    $('.page-ventures .venture-grid li.active').shuffle();
+    $('.page-ventures .venture-grid li.grad').shuffle();
+    $('.page-ventures .venture-grid li.other').shuffle();
 
     // COLLAPSE MENU
 
