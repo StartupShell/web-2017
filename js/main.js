@@ -38,7 +38,7 @@ $(document).ready(function() {
         return $(shuffled);
 
     };
-
+    //experiment with deploybot
     $('.page-ventures .venture-grid li.active').shuffle();
     $('.page-ventures .venture-grid li.grad').shuffle();
     $('.page-ventures .venture-grid li.other').shuffle();
