@@ -63,7 +63,7 @@ To change ventures, just modify the variables for that venture & save.
 
   {% for venture in site.data.ventures %}
   	{% if venture.image %}
-    {% if venture.status == "Grad"%}
+    {% if venture.status == "Exit" or venture.status == "Grad"%}
     <li class="venture-item grad">
     {% include_relative format/ventureFormat.html %}
     </li>
@@ -73,7 +73,7 @@ To change ventures, just modify the variables for that venture & save.
 
   {% for venture in site.data.ventures %}
     {% if venture.image %}
-    {% if venture.status == "Exit" or venture.status == "Dead" %}
+    {% if venture.status == "Dead" %}
     <li class="venture-item other">
     {% include_relative format/ventureFormat.html %}
     </li>
