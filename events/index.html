@@ -1,7 +1,37 @@
 ---
 layout: default
 title: Events
+pagedocs: true
 ---
+{% if page.pagedocs == "true" %}
+<!-- ABOUT THIS PAGE
+The pagedocs variable on this page tells Jekyll not to render the HTML comments below on our actual website.
+
+Events aren't added here.
+The events scraper pulls from the **Google Calendar**.
+To add events, you'll need to go there.
+*The current primary on that calendar is: Nathalyn@startupshell.org*
+To add an event, the Google Calendar events should have the following info:
+
+[Required]
+1. Event Name
+2. Date & time
+[Optional]
+3. location
+4. Facebook link
+5. Link to cover photo
+
+This will render a default event block with no link or image. To include both, use:
+**link to event (eq. Facebook) (this should be included in the description like this [event_link])**
+
+If there's no facebook event, but you would like to include a a cover image:
+**link to cover photo (this should be included in the description like this {img_link})**
+*Note: if you include a facebook event link, cover image will just pull from FB (i.e. this field isn't needed)
+By default, cover image is just the shell logo*
+-->
+{% else %}
+{% endif %}
+
 <div class="page-events">
     <section class="full hero">
         <div class="container">
