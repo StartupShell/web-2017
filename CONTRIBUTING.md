@@ -37,4 +37,4 @@ jekyll serve
 
 #### If you get an SSL error when attempting to install bundler or any other gem
 
-See http://guides.rubygems.org/ssl-certificate-update/ to fix this problem.
+See http://guides.rubygems.org/ssl-certificate-update/ to fix this problem. 
