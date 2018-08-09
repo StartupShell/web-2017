@@ -130,6 +130,18 @@ if( url.search( 'error=404' ) > 0 ) {
 msg.style.display = 'block';
 }
 
+// Check for new team
+
+// Get URL
+var url = window.location.href;
+// Get DIV
+var msg = document.getElementById('new-team');
+// Check if URL contains the keyword
+if( url.search( 'contact' ) > 0 ) {
+// Display the message
+msg.style.display = 'block';
+}
+
 // Check for Partner Thanks
 
 // Get URL
