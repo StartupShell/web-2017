@@ -1,7 +1,6 @@
 name,type,website,image
 University of Maryland,signature,http://www.umd.edu/,umd
 Amazon Web Services,resource,https://aws.amazon.com/,aws
-BAE Systems,signature,http://www.baesystems.com/,bae
 Creative Market,resource,https://creativemarket.com/,creativemarket
 Digital Ocean,resource,https://www.digitalocean.com/,digitalocean
 Dingman Center,campus,http://www.rhsmith.umd.edu/centers-excellence/dingman-center-entrepreneurship,dingman
@@ -11,9 +10,8 @@ Neelbauer Law LLC,legal,http://www.neelbauerlaw.com/,neelbauerlawllc
 MTech,campus,http://www.mtech.umd.edu/,mtech
 A. James Clark School of Engineering,campus,http://www.eng.umd.edu/,eng
 Terrapin Works,campus,https://terrapinworks.umd.edu/,terrapinworks
-Uber,signature,https://www.uber.com/,uber
-301 Ventures,capital,http://www.301ventures.com/,301
 Startup Village,resource,http://www.startupvillagecp.com/,sv
 Stripe Atlas,resource,https://stripe.com/atlas/,stripe-atlas
 Atlassian,resource,https://atlassian.com/,atlassian
 HubSpot for Startups,resource,https://hubspot.com/startups/,hubspot
+Front,resource,https://frontapp.com/,front
