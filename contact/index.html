@@ -1,8 +1,11 @@
 ---
 layout: default
 title: Contact
+transition: false
 ---
+{% if page.transition == "true" %}
 <div id="new-team" style="display: none; padding: 40px; background-color: #d74034; text-align: center; color: white; font-weight: bold;">Hi there! We're transitioning our leadership team right now so bear with us if you <a style="color: #fff; border-bottom: 1px dotted #fff;" href="mailto:hello@startupshell.org">reach out</a>. Someone will be in touch as soon as possible!</div>
+{% else %}
 <div class="page-contact" itemscope itemtype="https://schema.org/ContactPage">
 <meta itemprop="name" content="Startup Shell">
 <meta itemprop="email" content="{{ site.email }}">
@@ -36,13 +39,13 @@ title: Contact
             <div class="directors">
                 <h3 class="sm-underline">The Leadership Team</h3>
                 <div class="director" itemprop="employee" itemscope itemtype="https://schema.org/Person">
-                    <div class="director-image"><img itemprop="image" src="{{ "/assets/team/incoming.jpg" | prepend: site.baseurl }}"></div>
+                    <div class="director-image"><img itemprop="image" src="{{ "/assets/team/harrison.jpg" | prepend: site.baseurl }}"></div>
                     <div class="director-meta">
-                        <p itemprop="name">TBA</p>
+                        <p itemprop="name">Harrison Linowes</p>
                         <p itemprop="jobTitle">Executive Director, Incubator</p>
                         <p itemprop="phoneExtension">Ext: TBA</p>
-                        <meta itemprop="email" content="hello@startupshell.org">
-                        <p><a href="mailto:hello@startupshell.org"><span class="icon icon-email"></span></a></p>
+                        <meta itemprop="email" content="hlinowes@startupshell.org">
+                        <p><a href="mailto:hlinowes@startupshell.org"><span class="icon icon-email"></span></a></p>
                     </div>
                 </div>
                 <div class="director" itemprop="employee" itemscope itemtype="https://schema.org/Person">
@@ -66,33 +69,33 @@ title: Contact
                     </div>
                 </div-->
                 <div class="director" itemprop="employee" itemscope itemtype="https://schema.org/Person">
-                    <div class="director-image"><img itemprop="image" src="{{ "/assets/team/incoming.jpg" | prepend: site.baseurl }}"></div>
+                    <div class="director-image"><img itemprop="image" src="{{ "/assets/team/travis.jpg" | prepend: site.baseurl }}"></div>
                     <div class="director-meta">
-                        <p itemprop="name">TBA</p>
+                        <p itemprop="name">Travis Ho</p>
                         <p itemprop="jobTitle">Director, Events</p>
                         <p itemprop="phoneExtension">Ext: TBA</p>
-                        <meta itemprop="email" content="hello@startupshell.org">
-                        <p><a href="mailto:hello@startupshell.org"><span class="icon icon-email"></span></a></p>
+                        <meta itemprop="email" content="tho@startupshell.org">
+                        <p><a href="mailto:tho@startupshell.org"><span class="icon icon-email"></span></a></p>
                     </div>
                 </div>
                 <div class="director" itemprop="employee" itemscope itemtype="https://schema.org/Person">
-                    <div class="director-image"><img itemprop="image" src="{{ "/assets/team/incoming.jpg" | prepend: site.baseurl }}"></div>
+                    <div class="director-image"><img itemprop="image" src="{{ "/assets/team/zack.jpg" | prepend: site.baseurl }}"></div>
                     <div class="director-meta">
-                        <p itemprop="name">TBA</p>
+                        <p itemprop="name">Zack Khan</p>
                         <p itemprop="jobTitle">Director, Community</p>
                         <p itemprop="phoneExtension">Ext: TBA</p>
-                        <meta itemprop="email" content="hello@startupshell.org">
-                        <p><a href="mailto:hello@startupshell.org"><span class="icon icon-email"></span></a></p>
+                        <meta itemprop="email" content="zkhan@startupshell.org">
+                        <p><a href="mailto:zkhan@startupshell.org"><span class="icon icon-email"></span></a></p>
                     </div>
                 </div>
                 <div class="director" itemprop="employee" itemscope itemtype="https://schema.org/Person">
-                    <div class="director-image"><img itemprop="image" src="{{ "/assets/team/incoming.jpg" | prepend: site.baseurl }}"></div>
+                    <div class="director-image"><img itemprop="image" src="{{ "/assets/team/chloe.jpg" | prepend: site.baseurl }}"></div>
                     <div class="director-meta">
-                        <p itemprop="name">TBA</p>
+                        <p itemprop="name">Chloe Jones</p>
                         <p itemprop="jobTitle">Director, Communications</p>
                         <p itemprop="phoneExtension">Ext: TBA</p>
-                        <meta itemprop="email" content="hello@startupshell.org">
-                        <p><a href="mailto:hello@startupshell.org"><span class="icon icon-email"></span></a></p>
+                        <meta itemprop="email" content="cjones97@startupshell.org">
+                        <p><a href="mailto:cjones97@startupshell.org"><span class="icon icon-email"></span></a></p>
                     </div>
                 </div>
             </div>
