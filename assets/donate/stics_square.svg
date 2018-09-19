@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="274px" height="271px" viewBox="0 0 274 271" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 C0,0 25.1362914,0.252988395 31.7942685,6.88914027 C38.4522456,13.5252921 38.706066,38.5791855 38.706066,38.5791855 C38.706066,38.5791855 13.4175047,35.4187703 6.9117975,28.9343891 C0.406090322,22.450008 0,0 0,0 Z" id="path-1"></path>
+        <path d="M0.0187909427,37.6749082 C0.140064549,33.1304463 1.00932214,12.772267 6.9117975,6.88914027 C13.2390976,0.582581419 36.2547947,0.0408755936 38.5253953,0.002623201 L0.435950651,38.0920679 L0.0187909427,37.6749082 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3">
+            <g id="Group" transform="translate(55.000000, 28.000000)">
+                <g id="apple" transform="translate(0.000000, 55.000000)">
+                    <ellipse id="Oval" stroke="#D95444" stroke-width="13" fill="#FFFFFF" cx="80.176851" cy="79.9140271" rx="80.176851" ry="79.9140271"></ellipse>
+                    <g id="seeds" transform="translate(47.000223, 50.660633)" fill="#AA4033">
+                        <path d="M5.529438,12.728511 C26.860645,-4.6183109 38.2673516,25.5746173 6.78986182,13.3867517 L5.529438,12.728511 Z" id="Path-2" transform="translate(15.885234, 11.791020) rotate(50.000000) translate(-15.885234, -11.791020) "></path>
+                        <path d="M5.529438,45.7963843 C26.860645,28.4495624 38.2673516,58.6424906 6.78986182,46.454625 L5.529438,45.7963843 Z" id="Path-2" transform="translate(15.885234, 44.858893) scale(1, -1) rotate(50.000000) translate(-15.885234, -44.858893) "></path>
+                        <path d="M0,29.2624476 C21.331207,11.9156258 32.7379135,42.108554 1.26042382,29.9206883 L0,29.2624476 Z" id="Path-2"></path>
+                    </g>
+                    <path d="M82,5 C123.118622,5.82314068 156.198091,39.4127209 156.198091,80.7284251 C156.198091,122.044129 123.118622,155.63371 82,156.45685 L82,5 Z" id="Combined-Shape" fill="#D95444"></path>
+                </g>
+                <g id="leaf" transform="translate(94.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#47A15E" transform="translate(19.353033, 19.289593) scale(-1, 1) translate(-19.353033, -19.289593) " xlink:href="#path-1"></use>
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#63DD82" xlink:href="#path-3"></use>
+                </g>
+                <rect id="stem" fill="#8B572A" x="77" y="3" width="8" height="36" rx="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
