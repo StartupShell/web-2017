@@ -5,7 +5,7 @@ appstatus: closed
 applyfounderurl: //my.startupshell.org/apply/founders
 applyfellowurl: //my.startupshell.org/apply/fellows
 applyurl: //my.startupshell.org/apply
-nextbatch: Omicron
+nextbatch: w2019 (Winter 2019)
 monthopen: September
 pagedocs: true
 ---
@@ -29,7 +29,7 @@ Howdy! The content on this [membership] page can be changed via the variables se
     <section>
         <div class="container">
             <div class="notify">
-                <p>Membership is semesterly. {% if page.appstatus == "open" %}Applications are now open.{% else %}Applications for {{ page.nextbatch }} batch open in {{ page.monthopen }}. {% endif %}<br /> <span style="font-size: 0.6em;">*Currently, only enrolled undergraduate or graduate students at the University of Maryland are eligible for membership.</span></p>
+                <p>Membership is semesterly. {% if page.appstatus == "open" %}Applications are now open.{% else %}Applications for the {{ page.nextbatch }} batch open in {{ page.monthopen }}. {% endif %}<br /> <span style="font-size: 0.6em;">*Currently, only enrolled undergraduate or graduate students at the University of Maryland are eligible for membership.</span></p>
                 <div class="subscribe">
                 {% if page.appstatus == "open" %}
                 <a href="{{ page.applyurl }}" class="button">Apply Now</a>
