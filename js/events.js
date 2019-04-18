@@ -159,7 +159,7 @@ function assembleStructure(data, index, callback) {
 
         // If there's no cover image, use the default one
         if (!fbData.cover) {
-            var cover = '<div class="image no-fb"><img src="../assets/shell-logo-wire.svg"></div>';
+            var cover = '<div class="image no-fb"><img src="../assets/events/expo_promo.jpg"></div>';
         } else {
             var cover = '<div class="image"><img src="' + fbData.cover + '" itemprop="image" alt="' + fbData.title + '" onload="eventLoaded(this)" class="event-loading"></div>';
         }
