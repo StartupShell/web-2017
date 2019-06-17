@@ -23,7 +23,7 @@ The partners page was originally designed to support partner logos in the .png f
     <div class="container">
       <div class="hero-content hero-plain">
         <h2>Partners</h2>
-        <div class="hero-subheader">Startup Shell is made possible through the resources, support, and guidance provided by our partners.<br /><center><div style="width: 40px;padding-top: 10px;margin-top: 10px; border-top: 1px solid #cccccc;"></div></center><p>Want to get involved?<br /><a id="partner-form-link-disable" href="mailto:partners@startupshell.org"> Get in touch</a> or <a href="/assets/docs/startupshell-partner-packages.pdf">view our partner packages</a>.</p>
+        <div class="hero-subheader">Startup Shell is made possible through the resources, support, and guidance provided by our partners.<br /><center><div style="width: 40px;padding-top: 10px;margin-top: 10px; border-top: 1px solid #cccccc;"></div></center><p>Want to get involved?<br /><a href="/assets/docs/startupshell-partner-packages.pdf">View more information</a> or <a id="partner-form-link-disable" href="mailto:partners@startupshell.org"> email us</a>.</p>
           <div class="input-group" id="partner-form" style="display:none;">
             <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
@@ -57,7 +57,7 @@ The partners page was originally designed to support partner logos in the .png f
 
 <section class="venture-grid">
 <div class="container">
-<h3 class="sm-underline">Signature Partners</h3>
+<h3 class="sm-underline">Signature</h3>
   <ul>
   {% for partner in site.data.partners %}
     {% if partner.type == 'signature' %}
@@ -74,10 +74,10 @@ The partners page was originally designed to support partner logos in the .png f
 
 <section class="venture-grid">
 <div class="container">
-<h3 class="sm-underline">Campus Partners</h3>
+<h3 class="sm-underline">Alpha</h3>
   <ul>
   {% for partner in site.data.partners %}
-  	{% if partner.type == 'campus' %}
+    {% if partner.type == 'beta' %}
     <li class="venture-item">
       {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}" onerror="this.src='{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.png';">
@@ -86,12 +86,31 @@ The partners page was originally designed to support partner logos in the .png f
     {% endif %}
   {% endfor %}
   </ul>
+  Think you're the right fit for this partner category? <a href="/assets/docs/startupshell-partner-packages.pdf">View more information</a> or <a href="mailto:partners@startupshell.org?subject=Alpha Partner Inquiry">email us</a>.
   </div>
 </section>
 
 <section class="venture-grid">
 <div class="container">
-<h3 class="sm-underline">Resource Partners</h3>
+<h3 class="sm-underline">Beta</h3>
+  <ul>
+  {% for partner in site.data.partners %}
+    {% if partner.type == 'alpha' %}
+    <li class="venture-item">
+      {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
+        <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}" onerror="this.src='{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.png';">
+      {% if partner.website %}</a>{% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  Think you're the right fit for this partner category? <a href="/assets/docs/startupshell-partner-packages.pdf">View more information</a> or <a href="mailto:partners@startupshell.org?subject=Beta Partner Inquiry">email us</a>.
+  </div>
+</section>
+
+<section class="venture-grid">
+<div class="container">
+<h3 class="sm-underline">Resource</h3>
   <ul>
   {% for partner in site.data.partners %}
     {% if partner.type == 'resource' %}
@@ -108,10 +127,27 @@ The partners page was originally designed to support partner logos in the .png f
 
 <section class="venture-grid">
 <div class="container">
-<h3 class="sm-underline">Legal Partners</h3>
+<h3 class="sm-underline">Legal</h3>
   <ul>
   {% for partner in site.data.partners %}
     {% if partner.type == 'legal' %}
+    <li class="venture-item">
+      {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
+        <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}" onerror="this.src='{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.png';">
+      {% if partner.website %}</a>{% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  </div>
+</section>
+
+<section class="venture-grid">
+<div class="container">
+<h3 class="sm-underline">Campus</h3>
+  <ul>
+  {% for partner in site.data.partners %}
+    {% if partner.type == 'campus' %}
     <li class="venture-item">
       {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}" onerror="this.src='{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.png';">
