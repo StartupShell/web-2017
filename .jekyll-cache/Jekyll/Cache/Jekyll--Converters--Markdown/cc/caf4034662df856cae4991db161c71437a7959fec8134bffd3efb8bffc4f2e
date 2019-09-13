@@ -1,0 +1,93 @@
+I"+<h2 id="contributing">Contributing</h2>
+
+<h4 id="mac-dev-environment">Mac Dev Environment</h4>
+
+<ol>
+  <li>Install Jekyll</li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">[sudo] gem install jekyll</code></li>
+</ul>
+
+<ol>
+  <li>Download Repo</li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">[sudo] git clone https://github.com/StartupShell/web-2017.git</code></li>
+</ul>
+
+<ol>
+  <li>Run Locally</li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">jekyll serve</code></li>
+</ul>
+
+<h4 id="windows-dev-environment">Windows Dev Environment</h4>
+
+<p>TL;DR if chocolatey is installed:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco install ruby -y
+gem install bundler
+gem install jekyll
+git clone https://github.com/startupshell/web-2017.git &amp;&amp; cd web-2017
+jekyll serve
+</code></pre></div></div>
+
+<ol>
+  <li>Install Chocolatey (skip if already installed)</li>
+</ol>
+
+<ul>
+  <li>Open a command prompt with admin privs</li>
+  <li><code class="highlighter-rouge">Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))</code></li>
+  <li>Close command prompt</li>
+</ul>
+
+<ol>
+  <li>Install Ruby</li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">choco install ruby -y</code></li>
+</ul>
+
+<ol>
+  <li>Install Bundler</li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">gem install bundler</code></li>
+</ul>
+
+<ol>
+  <li>Install Jekyll</li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">gem install jekyll</code></li>
+</ul>
+
+<ol>
+  <li>Download Repo</li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">git clone https://github.com/StartupShell/web-2017.git</code></li>
+</ul>
+
+<ol>
+  <li>Run Locally</li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">jekyll serve</code></li>
+</ul>
+
+<h4 id="if-you-get-an-ssl-error-when-attempting-to-install-bundler-or-any-other-gem">If you get an SSL error when attempting to install bundler or any other gem</h4>
+
+<p>See http://guides.rubygems.org/ssl-certificate-update/ to fix this problem.</p>
+:ET
