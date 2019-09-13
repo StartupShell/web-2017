@@ -30,7 +30,7 @@ TL;DR if chocolatey is installed:
 1. Install Chocolatey (skip if already installed)
 
 * Open a command prompt with admin privs
-* `@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
+* `Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 * Close command prompt
 
 1. Install Ruby
