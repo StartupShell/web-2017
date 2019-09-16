@@ -20,10 +20,11 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: _site
+  install_dependencies_command: gem install jekyll
   preview_docker_image: forestryio/build:latest
   mount_path: "/opt/buildhome/repo"
-  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
-    --port 8080 --host 0.0.0.0 -d _site
+  instant_preview_command: jekyll serve --drafts --unpublished --future --port 8080
+    --host 0.0.0.0 -d _site
   publish_command: bundle exec jekyll build -d _site
   publish_env:
   - JEKYLL_ENV=production
