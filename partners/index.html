@@ -77,7 +77,7 @@ The partners page was originally designed to support partner logos in the .png f
 <h3 class="sm-underline">Alpha</h3>
   <ul>
   {% for partner in site.data.partners %}
-    {% if partner.type == 'beta' %}
+    {% if partner.type == 'alpha' %}
     <li class="venture-item">
       {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}" onerror="this.src='{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.png';">
@@ -95,7 +95,7 @@ The partners page was originally designed to support partner logos in the .png f
 <h3 class="sm-underline">Beta</h3>
   <ul>
   {% for partner in site.data.partners %}
-    {% if partner.type == 'alpha' %}
+    {% if partner.type == 'beta' %}
     <li class="venture-item">
       {% if partner.website %}<a href="{{ partner.website }}" target="_blank">{% endif %}
         <img src="{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.svg" alt="{{ partner.name }}" onerror="this.src='{{ site.baseurl }}/assets/partners/logo_{{partner.image}}.png';">
