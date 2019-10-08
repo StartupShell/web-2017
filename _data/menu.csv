@@ -4,3 +4,4 @@ partners,/partners
 events,/events
 FAQ,/faq,menu-text-small
 apply,/membership,button
+log in <i style='padding-left: 5px;' class='fal fa-user-lock'></i>,//my.startupshell.org
