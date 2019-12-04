@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 603 420.82"><defs><style>.cls-1{fill:#5dc0ae;}.cls-2{font-size:135px;fill:#2a2946;font-family:AvenirNext-Bold, Avenir Next;font-weight:700;letter-spacing:-0.02em;}.cls-3{letter-spacing:0em;}.cls-4{letter-spacing:0.03em;}.cls-5{letter-spacing:0em;}.cls-6{letter-spacing:0.01em;}.cls-7{letter-spacing:0.02em;}</style></defs><title>Asset 11</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M288.62,97.41H248.21c-7.29,0-13.2-4.84-13.2-10.82V10.82c0-6,5.91-10.82,13.2-10.82h77.52c7.29,0,13.19,4.85,13.19,10.82V37.21c0,3-2.95,5.41-6.59,5.41H301.81c-3.64,0-6.6,2.42-6.6,5.41V92C295.21,95,292.26,97.41,288.62,97.41Z"/><path class="cls-1" d="M350.61,119.82v28.42c0,6-5.87,10.82-13.11,10.82H308.42c-7.25,0-13.12,4.84-13.12,10.82v25.71c0,6-5.87,10.82-13.11,10.82H248c-7.24,0-13.11-4.84-13.11-10.82V119.82c0-5.95,5.9-10.82,13.11-10.82h89.5C344.74,109,350.61,113.85,350.61,119.82Z"/><path class="cls-1" d="M410.2,10.82V86.59c0,6-5.87,10.82-13.11,10.82H313.48c-3.62,0-6.56-2.42-6.56-5.41V60.21c0-3,2.94-5.42,6.56-5.42h31.15a6.48,6.48,0,0,0,6-5.67V10.56C351.19,4.85,357.06,0,364.3,0h32.79C404.33,0,410.2,4.85,410.2,10.82Z"/><text class="cls-2" transform="translate(31.24 355.21)">F<tspan class="cls-3" x="75.6" y="0">o</tspan><tspan class="cls-4" x="160.38" y="0">r</tspan><tspan class="cls-5" x="217.75" y="0">m</tspan><tspan class="cls-6" x="343.03" y="0">i</tspan><tspan class="cls-7" x="384.61" y="0">co</tspan></text></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 150" style="enable-background:new 0 0 200 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#5DC0AE;}
+	.st1{fill:#2A2946;}
+	.st2{font-family:'AvenirNext-Bold';}
+	.st3{font-size:45.8744px;}
+</style>
+<title>Asset 11</title>
+<g id="Layer_2_1_">
+	<g id="Layer_1-2">
+		<path class="st0" d="M96.3,40.1H82.7c-2.5,0-4.4-1.6-4.4-3.6V10.6c0-2,2-3.6,4.4-3.6h26c2.5,0,4.4,1.6,4.4,3.6v9
+			c0,1.1-0.9,1.8-2.2,1.8h-10.3c-1.2,0-2.2,0.9-2.2,1.8v15C98.5,39.3,97.5,40.1,96.3,40.1z"/>
+		<path class="st0" d="M117,47.7v9.7c0,2-2,3.6-4.3,3.6h-9.7c-2.5,0-4.4,1.6-4.4,3.6v8.7c0,2-2,3.6-4.3,3.6H82.7
+			c-2.5,0-4.3-1.6-4.3-3.6V47.7c0-2,2-3.6,4.3-3.6h29.9C115,44,117,45.7,117,47.7z"/>
+		<path class="st0" d="M137,10.6v25.8c0,2-2,3.6-4.3,3.6h-27.9c-1.2,0-2.2-0.9-2.2-1.8V27.4c0-1.1,0.9-1.8,2.2-1.8h10.4
+			c1-0.1,1.9-0.9,2-1.9V10.5c0.2-1.9,2.2-3.5,4.5-3.5h10.9C135,7,137,8.6,137,10.6z"/>
+		<text transform="matrix(0.9848 0 0 1 10.1571 127.7061)" class="st1 st2 st3">F</text>
+		<text transform="matrix(0.9848 0 0 1 35.4583 127.7061)" class="st1 st2 st3">o</text>
+		<text transform="matrix(0.9848 0 0 1 63.8309 127.7061)" class="st1 st2 st3">r</text>
+		<text transform="matrix(0.9848 0 0 1 83.0301 127.7061)" class="st1 st2 st3">m</text>
+		<text transform="matrix(0.9848 0 0 1 124.9569 127.7061)" class="st1 st2 st3">i</text>
+		<text transform="matrix(0.9848 0 0 1 138.8719 127.7061)" class="st1 st2 st3">co</text>
+	</g>
+</g>
+</svg>
