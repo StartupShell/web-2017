@@ -130,6 +130,26 @@ if( url.search( 'error=404' ) > 0 ) {
 msg.style.display = 'block';
 }
 
+// Get URL
+var url = window.location.href;
+// Get DIV
+var msg = document.getElementById('jira');
+// Check if URL contains the keyword
+if( url.search( 'app=jira' ) > 0 ) {
+// Display the message
+msg.style.display = 'block';
+}
+
+// Get URL
+var url = window.location.href;
+// Get DIV
+var msg = document.getElementById('docs');
+// Check if URL contains the keyword
+if( url.search( 'app=docs' ) > 0 ) {
+// Display the message
+msg.style.display = 'block';
+}
+
 // Check for new team
 
 // Get URL
