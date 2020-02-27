@@ -1,21 +1,33 @@
-name: Jekyll site CI
+name: Startup Shell Website CI
 
-on: [push]
+# Deploy on push to master branch
+
+on:
+  push:
+    branches:
+      - master
+
+# Job instructions
 
 jobs:
   build:
-
+    # Run the job on ubuntu
     runs-on: ubuntu-latest
-
+    # Define job steps
     steps:
+    # Check out code
     - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
+    # Start build using jekyll/builder docker container
+    - name: Build the website using jekyll/builder container
+    # Run the build
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    # Start deployment to Startup Shell cPanel Server
     - name: Deploy to Production
       uses: garygrossgarten/github-action-scp@v0.5.3
+      # Deployment config uses GitHub repo secrets for connection to the server
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.DEPLOY_USER }}
@@ -24,4 +36,5 @@ jobs:
         port: ${{ secrets.PORT }}
         local: "_site"
         remote: "public_html"
+    # Site deployed
 
