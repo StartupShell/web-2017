@@ -22,6 +22,6 @@ jobs:
         privateKey: ${{ secrets.DEPLOY_KEY }}
         passphrase: ${{ secrets.DEPLOY_PASSPHRASE }}
         port: ${{ secrets.PORT }}
-        source: "${{ github.workspace }}/_site"
-        target: "public_html/sitetest"
+        source: "/srv/jekyll/_site/*"
+        target: "public_html/sitetest/*"
 
