@@ -36,5 +36,13 @@ jobs:
         port: ${{ secrets.PORT }}
         local: "_site"
         remote: "public_html"
+    - name: Post to Slack
+      uses: 8398a7/action-slack@v2
+      with:
+        status: ${{ job.status }}
+        author_name: GitHub Actions # default: 8398a7@action-slack
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
+      if: always()
     # Site deployed
 
