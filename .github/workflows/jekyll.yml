@@ -14,3 +14,13 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    - name: Copy via ssh
+    - uses: garygrossgarten/github-action-scp@v0.5.3
+    - with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        source: "${{ github.workspace }}/_site"
+        target: "public_html/sitetest"
+
