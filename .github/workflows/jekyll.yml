@@ -23,5 +23,5 @@ jobs:
         passphrase: ${{ secrets.DEPLOY_PASSPHRASE }}
         port: ${{ secrets.PORT }}
         local: "_site"
-        remote: "public_html/sitetest"
+        remote: "public_html"
 
