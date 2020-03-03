@@ -21,6 +21,6 @@ build:
   - JEKYLL_ENV=staging
   preview_output_directory: _site
   preview_docker_image: jekyll/builder
-  mount_path: _site
+  mount_path: "/srv/jekyll"
   instant_preview_command: jekyll serve --drafts --unpublished  _site
   preview_command: jekyll build --drafts --unpublished --future -d _site
