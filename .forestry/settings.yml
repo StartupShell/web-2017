@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: ''
+  label: Site Root
+  create: all
+  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
@@ -21,6 +26,7 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: "/srv/jekyll/_site"
+  install_dependencies_command: bundle install --path vendor/bundle
   preview_docker_image: jekyll/builder
   mount_path: "/srv/jekyll"
   instant_preview_command: jekyll serve --drafts --unpublished --future --port 8080
