@@ -73,8 +73,6 @@ $(document).ready(function() {
             data[item.name] = item.value;
         });
 
-        console.log(data);
-
         $.ajax({
             url: url,
             data: data,
