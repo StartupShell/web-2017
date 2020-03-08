@@ -45,5 +45,5 @@ jobs:
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
       if: always()
-    # Site deployed to stage
+    # Site deployed to staging
 
