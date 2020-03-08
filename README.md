@@ -2,7 +2,9 @@
 
 ## Startup Shell Redesign 2017
 
-Master branch is deployed to production automagically. The site is built using Jekyll.
+Master branch is deployed to production automagically (startupshell.org). Develop branch is deployed to staging automagically (stage.startupshell.org). The site is built using Jekyll.
+
+Learn how to spin up a local development environment for this website by reading the contributing section.
 
 ### Contributing
 
