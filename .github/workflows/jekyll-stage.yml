@@ -1,0 +1,49 @@
+name: Startup Shell Website CI - STAGE
+
+# Deploy on push to develop branch
+
+on:
+  push:
+    branches:
+      - develop
+
+# Job instructions
+
+jobs:
+  build:
+    # Run the job on ubuntu
+    runs-on: ubuntu-latest
+    # Define job steps
+    steps:
+    # Check out code
+    - uses: actions/checkout@v2
+    # Start build using jekyll/builder docker container
+    - name: Build the website using jekyll/builder container
+    # Run the build
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    # Start deployment to Startup Shell cPanel Server
+    - name: Deploy to Stage
+      uses: garygrossgarten/github-action-scp@v0.5.3
+      # Deployment config uses GitHub repo secrets for connection to the server
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.DEPLOY_USER_STAGE }}
+        privateKey: ${{ secrets.DEPLOY_KEY_STAGE }}
+        passphrase: ${{ secrets.DEPLOY_PASSPHRASE_STAGE }}
+        port: ${{ secrets.PORT }}
+        local: "_site"
+        remote: "public_html"
+    - name: Post to Slack
+      uses: 8398a7/action-slack@v2
+      with:
+        status: ${{ job.status }}
+        icon_emoji: ':octocat-obiwan:'
+        author_name: Startup Shell Website Deployment - STAGE # default: 8398a7@action-slack
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
+      if: always()
+    # Site deployed
+
