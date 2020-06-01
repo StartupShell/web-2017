@@ -17,3 +17,5 @@ We cannot act as if we all will be in a position to experience and fully underst
 At <a href="https://bit.camp">Bitcamp</a>, <a href="https://gotechnica.org">Technica</a>, and <a href="https://startupshell.org">Startup Shell</a>, our mission has been to create inclusive spaces for young people to build technology that transform their communities and our world for the better. We are incredibly proud of our diversity and welcome people from all walks to life to both participate in and organize our events.
 
 Together we must do more. We intend to draw on our diversity in order to make effective change in racial equity and in moving our collective humanity forward. We will continue to work with our community at the University of Maryland, the state of Maryland, the Entrepreneurship community, and Major League Hacking to raise awareness, fight against racial prejudice, and create a more just society for everyone.
+
+This statement originally appeared on <a href="https://news.startupshell.org/blm/">Startup Shell News</a>.
