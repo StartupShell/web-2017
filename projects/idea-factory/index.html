@@ -1,0 +1,63 @@
+---
+layout: default
+title: IDEA Factory
+pagedocs: true
+---
+{% if page.pagedocs == "true" %}
+<!-- ABOUT THIS PAGE
+The pagedocs variable on this page tells Jekyll not to render the HTML comments below on our actual website.
+
+This is a nifty little feature that you'll find pretty useful when Startup Shell has big news. This page has a list of press assets and displays a list of press releases.
+
+#### About Press Releases
+Press releases are stored in the _posts subdirectory.
+The press release file must be in Markdown format (.md) and be named with the following convention:
+YYYY-MM-DD-name-of-release.md
+Each press release must have the required YAML front matter (those variables up there ^^ between the lines at the top of the page).
+##### About the YAML front matter
+Each press release contains the following YAML front matter:
+
+layout: post
+title:  "Really Cool and Awesome Press Release Title"
+date:   2017-04-06 9:00:00 -0500
+categories: press releases
+presscontactname: "John Doe"
+presscontactemail: "jdoe@startupshell.org"
+presscontactphone: "(206) 673-2979 x0"
+subtitle: "Really cool & awesome press release subtitle."
+
+It's pretty self-expanatory how to populate those variables, but here's a couple things to note:
+Jekyll will use the date specified here to determine the date of the post as it shows up on the website.
+The categories variable will determine the url structure of the press release (e.g. the categories above "press releases" will format the url to be https://startupshell.org/press/releases/YYYY-MM-DD-press-release-name.html).
+The press contact information changes who the contact is that is listed on the press release.
+-->
+{% else %}
+{% endif %}
+<div class="page-press">
+
+  <section class="full hero">
+    <div class="container">
+      <div class="hero-content hero-plain">
+        <h2>Startup Shell is moving to the IDEA Factory</h2>
+        <div class="hero-subheader">See all the updates here.<br /></div>
+      </div>
+    </div>
+  </section> <!-- /.hero -->
+
+<section class="press-items">
+<div class="container">
+<h3 class="sm-underline">Live Construction Feed</h3>
+  <iframe src="https://vauth.command.verkada.com/embed/html/cd8f4871-2741-4b21-8e55-0066b2a9221c/" frameborder="0" width="100%" height="600"></iframe>
+</div>
+</section>
+
+<section class="press-items">
+<div class="container">
+<h3 class="sm-underline">Press Assets</h3>
+<h4>The Startup Shell Brand</h4>
+  <p>Brand Assets - <a href="https://github.com/StartupShell/brand/archive/master.zip">Download</a>
+  <br />Brand Guidelines - <a href="https://www.notion.so/The-Startup-Shell-Brand-d7c0454fd3904941bff67f19870bdf86">View</a></p>
+</div>
+</section>
+
+</div>
